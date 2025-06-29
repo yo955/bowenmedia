@@ -1,0 +1,36 @@
+/* @charset "UTF-8"; */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"); */
+
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+i.fa {
+  /* font-family: "fontAwesome"; */
+}
+
+._wrapper {
+  width: 100%;
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+
+.overflow {
+  overflow: hidden;
+}
+

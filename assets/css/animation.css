@@ -1,0 +1,131 @@
+/* New File css here */
+.parallax {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .scroller {
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+    will-change: transform;
+  }
+  .scroller span {
+    flex-shrink: 0;
+  }
+  @media (min-width: 768px) {
+    .scroller {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+  }
+  
+  .digital_section-image-hover {
+    position: fixed;
+    left: 50%;
+    top: 10vh;
+    transform: translateX(-50%);
+    z-index: 1000;
+    pointer-events: none;
+    width: 420px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.35s cubic-bezier(.4,0,.2,1), transform 0.35s cubic-bezier(.4,0,.2,1);
+    filter: drop-shadow(0 8px 32px rgba(0,0,0,0.18));
+  }
+  .digital_section-image-hover.show {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.04);
+  }
+  .digital_section-image-hover img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    background: #fff;
+  }
+  .precision-section-image-hover {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: scale(0);
+    z-index: 1000;
+    pointer-events: none;
+    width: 200px;
+    height: 150px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .precision-section-image-hover.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .precision-section-image-hover img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* Footer Let's do this hover animation */
+  .footerItemTop h1 {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  .footerItemTop h1 span {
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: center;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  .footerItemTop h1:hover span {
+    animation: charFloat 0.6s ease-in-out;
+  }
+  
+  .footerItemTop h1:hover span:nth-child(1) { animation-delay: 0s; }
+  .footerItemTop h1:hover span:nth-child(2) { animation-delay: 0.05s; }
+  .footerItemTop h1:hover span:nth-child(3) { animation-delay: 0.1s; }
+  .footerItemTop h1:hover span:nth-child(4) { animation-delay: 0.15s; }
+  .footerItemTop h1:hover span:nth-child(5) { animation-delay: 0.2s; }
+  .footerItemTop h1:hover span:nth-child(6) { animation-delay: 0.25s; }
+  .footerItemTop h1:hover span:nth-child(7) { animation-delay: 0.3s; }
+  .footerItemTop h1:hover span:nth-child(8) { animation-delay: 0.35s; }
+  .footerItemTop h1:hover span:nth-child(9) { animation-delay: 0.4s; }
+  .footerItemTop h1:hover span:nth-child(10) { animation-delay: 0.45s; }
+  .footerItemTop h1:hover span:nth-child(11) { animation-delay: 0.5s; }
+  
+  @keyframes charFloat {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(5deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+  
