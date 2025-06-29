@@ -1981,67 +1981,6 @@ p._bold {
   }
 }
 
-/* textSection style */
-.priceSection {
-  /* background-color: rgba(255, 0, 0, 0.485); */
-  text-align: center;
-  position: relative;
-  align-items: center;
-  display: flex;
-  height: 90vh;
-  justify-content: center;
-  overflow-x: hidden;
-}
-.priceSection p {
-  /* font-size: 5em; */
-  color: #fff;
-  /* --tw-tracking: -.04em; */
-  letter-spacing: -0.04em;
-  font-size: 89px;
-  line-height: 140%;
-}
-._two {
-  font-weight: 800;
-}
-
-/* textSection style */
-.textSection {
-  text-align: center;
-  padding: 3em 0;
-  font-size: 20px;
-}
-.textSection p {
-  font-size: 24px;
-  /* letter-spacing: -0.4em; */
-  line-height: 150%;
-  font-weight: 700;
-  width: 64%;
-  margin: auto;
-  color: #000;
-}
-
-/*  */
-/*  */
-/*  */
-/* project_section style */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .project_section {
   /* border-top:2px solid #a9a9a9; */
@@ -3441,44 +3380,5 @@ footer .footerTimer {
   font-weight: 900;
   text-align: center;
   line-height: 1.1;
-}
-.char {
-  display: inline-block;
-  will-change: opacity, transform;
-  font-size: 6rem;
-  color: #fff;
-}
-
-/* GSAP Card Animation Styles */
-.card-animate {
-  opacity: 0;
-  transform: translateY(100px);
-  will-change: transform, opacity;
-}
-
-/* تحسين الانيميشن للكاردات */
-.digital_box_left.card-animate,
-.digital_box_right.card-animate,
-.dgBoxImg.card-animate {
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
-}
-
-/* تحسين الانيميشن للكاردات الفردية */
-.dgBox {
-  will-change: transform, opacity, scale;
-}
-
-/* تحسين الانيميشن للنصوص */
-.dgBox h2,
-.dgBox p,
-.bg_box h2,
-.bg_box p {
-  will-change: transform, opacity;
-}
-
-/* إضافة تأثير hover للكاردات */
-.dgBox:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
 }
 

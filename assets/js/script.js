@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Hide navList elements on scroll only if menu is not open
-    const navLinks = document.querySelector('.nav-links');
+    const navLinks = document.querySelector('.nav_list');
     if (navLinks && !navLinks.classList.contains('active')) {
       navList.forEach(item => {
         item.classList.toggle('hide-on-scroll', window.scrollY > 150);
@@ -528,77 +528,76 @@ if (typeof Swiper !== 'undefined') {
 
 gsap.registerPlugin(ScrollTrigger);
 
-// دالة لتقسيم النص إلى span لكل حرف
-function splitTextToChars(element) {
-  const text = element.textContent;
+// دالة لتقسيم النص إلى span لكل كلمة
+function splitTextToWords(element) {
+  const text = element.textContent.trim();
   element.innerHTML = '';
-  text.split('').forEach(char => {
+  const words = text.split(' ');
+  
+  words.forEach((word, index) => {
     const span = document.createElement('span');
-    span.className = 'char';
-    span.textContent = char === ' ' ? '\u00A0' : char;
+    span.className = 'word';
+    span.textContent = word;
     element.appendChild(span);
+    
+    // إضافة مسافة بين الكلمات (إلا إذا كانت الكلمة الأخيرة)
+    if (index < words.length - 1) {
+      element.appendChild(document.createTextNode(' '));
+    }
   });
 }
 
 // تطبيق التقسيم على كل scroll-float
-Array.from(document.querySelectorAll('.scroll-float')).forEach(el => splitTextToChars(el));
+Array.from(document.querySelectorAll('.scroll-float')).forEach(el => splitTextToWords(el));
 
-// أنيميشن للجملة الأولى (يختفي من اليسار لليمين)
+// الجملة الأولى: تدور للأعلى وتختفي (rotationX: 90)
 gsap.fromTo(
-  '.price-title .char',
+  '.price-title .word',
   {
     opacity: 1,
-    yPercent: 0,
-    scaleY: 1,
-    scaleX: 1,
-    filter: 'blur(0px)'
+    y: 0,
+    rotationX: 0,
+    transformOrigin: '50% 100%',
   },
   {
     opacity: 0,
-    yPercent: -120,
-    scaleY: 2.3,
-    scaleX: 0.7,
-    filter: 'blur(8px)',
-    stagger: {
-      each: 0.06,
-      from: 'start'
-    },
-    ease: 'back.inOut(2)',
+    y: -80,
+    rotationX: 80,
+    transformOrigin: '50% 100%',
+    stagger: { each: 0.05, from: 'end' },
+    ease: 'cubic.inOut',
+    duration: 0.5,
     scrollTrigger: {
       trigger: '.priceSection',
       start: 'top center',
-      end: '+=600',
-      scrub: true
+      end: '+=500',
+      scrub: true,
     }
   }
 );
 
-// أنيميشن للجملة الثانية (يظهر من اليسار لليمين)
+// الجملة الثانية: تظهر من الأسفل وتدور للأمام (rotationX: -90 → 0)
 gsap.fromTo(
-  '.approach-title .char',
+  '.approach-title .word',
   {
     opacity: 0,
-    yPercent: 120,
-    scaleY: 2.3,
-    scaleX: 0.7,
-    filter: 'blur(8px)'
+    y: 60,
+    rotationX: -90,
+    transformOrigin: '50% 0%',
   },
   {
     opacity: 1,
-    yPercent: 0,
-    scaleY: 1,
-    scaleX: 1,
-    filter: 'blur(0px)',
-    stagger: {
-      each: 0.06,
-      from: 'start'
-    },
-    ease: 'back.inOut(2)',
+    y: 0,
+    rotationX: 0,
+    transformOrigin: '50% 0%',
+    stagger: { each: 0.15, from: 'start' },
+    ease: 'cubic.inOut',
+    duration: 0.5,
     scrollTrigger: {
       trigger: '.priceSection',
       start: 'top center',
-      end: '+=600',
-      scrub: true
+      end: '+=400',
+      scrub: true,
     }
   }
 );
