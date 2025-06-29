@@ -3449,3 +3449,36 @@ footer .footerTimer {
   color: #fff;
 }
 
+/* GSAP Card Animation Styles */
+.card-animate {
+  opacity: 0;
+  transform: translateY(100px);
+  will-change: transform, opacity;
+}
+
+/* تحسين الانيميشن للكاردات */
+.digital_box_left.card-animate,
+.digital_box_right.card-animate,
+.dgBoxImg.card-animate {
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* تحسين الانيميشن للكاردات الفردية */
+.dgBox {
+  will-change: transform, opacity, scale;
+}
+
+/* تحسين الانيميشن للنصوص */
+.dgBox h2,
+.dgBox p,
+.bg_box h2,
+.bg_box p {
+  will-change: transform, opacity;
+}
+
+/* إضافة تأثير hover للكاردات */
+.dgBox:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+

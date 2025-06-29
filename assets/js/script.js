@@ -14,6 +14,95 @@ if (el) {
   });
 }
 
+// GSAP Card Animation for digital_section
+document.addEventListener('DOMContentLoaded', () => {
+  // تهيئة GSAP ScrollTrigger
+  gsap.registerPlugin(ScrollTrigger);
+  
+  // انيميشن الكاردات في السيكشن digital_section
+  const cardAnimates = document.querySelectorAll('.card-animate');
+  
+  if (cardAnimates.length > 0) {
+    // انيميشن للكاردات الرئيسية
+    gsap.fromTo(cardAnimates, 
+      {
+        y: 300,
+        opacity: 0
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".digital_section",
+          start: "top 50%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+          markers: false
+        }
+      }
+    );
+    
+    // انيميشن خاص للكاردات الفردية (dgBox)
+    const dgBoxes = document.querySelectorAll('.dgBox');
+    if (dgBoxes.length > 0) {
+      gsap.fromTo(dgBoxes,
+        {
+          y: 80,
+          opacity: 0,
+          scale: 0.95
+        },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 0.8,
+          stagger: 0.15,
+          ease: "back.out(1.7)",
+          scrollTrigger: {
+            trigger: ".digital_section",
+            start: "top 70%",
+            end: "bottom 30%",
+            toggleActions: "play none none reverse"
+          }
+        }
+      );
+    }
+    
+    // انيميشن للنصوص داخل الكاردات
+    const cardTexts = document.querySelectorAll('.dgBox h2, .dgBox p, .bg_box h2, .bg_box p');
+    if (cardTexts.length > 0) {
+      gsap.fromTo(cardTexts,
+        {
+          y: 30,
+          opacity: 0
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.6,
+          stagger: 0.1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".digital_section",
+            start: "top 75%",
+            end: "bottom 25%",
+            toggleActions: "play none none reverse"
+          }
+        }
+      );
+    }
+  }
+  
+  // تحسين الأداء
+  ScrollTrigger.config({
+    ignoreMobileResize: true,
+    autoRefreshEvents: "visibilitychange,DOMContentLoaded,load"
+  });
+});
+
 // Navbar scroll effect function - Improved version
 document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('.navbar');
