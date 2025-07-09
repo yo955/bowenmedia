@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bowenmedia</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+      <!-- Link Swiper's CSS -->
+
+          <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+<!-- nicescroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Truculenta:opsz@12..72&family=WDXL+Lubrifont+SC&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/pagestyle.css">
+    <link rel="stylesheet" href="assets/css/work.css">
+
+
+  </head>
+  <body class="relative">
+
+    <div class="header-agency">
+      
+      <!-- Overlay Video Modal -->
+      <!-- scroll bar -->
+      <div class="scroller"></div>
+      <!-- back_video"> -->
+      <nav class="navbar">
+        <div class="row">
+          <div class="col">
+            <div class="nav_item">
+              <a href="#" class="logo" id="navLogo"> 
+                BOW<i class="fa-solid fa-bars"></i>N
+              </a>
+            </div>
+          </div>
+          <!-- dropdown -->
+          <div class="col col_expertise">
+            <div class="nav_item">
+              <div class="_tab" style="border: 1px solid black;">
+                <a href="#" class="link_show colorBlack"
+                  >Expertise
+                  <i
+                    class="fas fa-hand-peace" colorBlack
+                    style="font-size: 20px; color: white"
+                  ></i>
+                </a>
+                <a href="#" class="link_hidd colorBlack"
+                  >Expertise
+                  <i
+                    class="fas fa-hand-peace"
+                    style="font-size: 20px; color: white"
+                  ></i>
+                </a>
+              </div>
+
+              <div class="dropdown-content">
+                <div class="dropdown_tab">
+                  <div class="tabs">
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content1">
+                        Web Design
+                      </div>
+                      <div class="tab _tabHidd" data-content="content1">
+                        Web Design
+                      </div>
+                    </div>
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content2">
+                        Web Design2
+                      </div>
+                      <div class="tab _tabHidd" data-content="content2">
+                        Web Design2
+                      </div>
+                    </div>
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content3">
+                        Web Design3
+                      </div>
+                      <div class="tab _tabHidd" data-content="content3">
+                        Web Design3
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div id="content1" class="content active">
+                      <img
+                        src="assets/images/pexels-pixabay-355952.jpg"
+                        alt="img"
+                      />
+                    </div>
+                    <div id="content2" class="content">
+                      <img
+                        src="assets/images/pexels-mart-production-7718663.jpg"
+                        alt="img"
+                      />
+                    </div>
+                    <div id="content3" class="content">
+                      <img
+                        src="assets/images/pexels-atbo-66986-245240.jpg"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col">
+            <div class="nav_item">
+              <ul class="nav-links">
+                <li class="nav_list">
+                  <a href="#" class="link_show colorBlack">Agency</a>
+                  <a href="#" class="link_hidd colorBlack">Agency</a>
+                </li>
+                <li class="nav_list">
+                  <a href="#" class="link_show colorBlack">Approach</a>
+                  <a href="#" class="link_hidd colorBlack">Approach</a>
+                </li>
+                <li class="nav_list">
+                  <a href="#" class="link_show colorBlack">Work</a>
+                  <a href="#" class="link_hidd colorBlack">Work</a>
+                </li>
+                <li class="nav_list">
+                  <a href="#" class="link_show colorBlack">Insights</a>
+                  <a href="#" class="link_hidd colorBlack">Insights</a>
+                </li>
+              
+                <!-- Mobile close button -->
+                <li class="mobile-close-btn" >
+                  <i class="fas fa-times"></i>
+                </li>
+              </ul>
+              <button
+               class="nav_btn" onclick="toggleSidebar()">
+                <a href="#">let's talk</a>
+                <a href="#" class="_btn">
+                  <i class="fa-solid fa-arrow-right link_show"></i>
+                  <!-- <i class="fa-solid fa-arrow-right link_hidd"></i> -->
+                  <i class="fa-regular fa-face-smile link_hidd"></i>
+                </a>
+              </button>
+              <div class="menu-button" >
+                <span class="menu-text menu_show">menu</span>
+                <span class="menu-text menu_hidd">menu</span>
+              </div>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+        
+      </nav>
+      </div>
+
+       <!-- Mobile Menu Overlay -->
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-logo">BOWEN</div>
+        <div class="mobile-menu-actions">
+          <button class="mobile-menu-talk">Let's Talk <span class="arrow">→</span></button>
+          <button class="mobile-menu-close">Close</button>
+        </div>
+      </div>
+      <ul class="mobile-menu-list">
+        <li><span class="menu-num">01</span> <span class="menu-title">Agency</span></li>
+        <li><span class="menu-num">02</span> <span class="menu-title">Expertise</span></li>
+        <li><span class="menu-num">03</span> <span class="menu-title">Approach</span></li>
+        <li><span class="menu-num">04</span> <span class="menu-title">Work</span></li>
+        <li><span class="menu-num">05</span> <span class="menu-title">Insights</span></li>
+        <li><span class="menu-num">01</span> <span class="menu-title">Agency</span></li>
+        <li><span class="menu-num">02</span> <span class="menu-title">Expertise</span></li>
+        <li><span class="menu-num">03</span> <span class="menu-title">Approach</span></li>
+        <li><span class="menu-num">04</span> <span class="menu-title">Work</span></li>
+        <li><span class="menu-num">05</span> <span class="menu-title">Insights</span></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <span class="mobile-menu-time" id="mobileMenuTime">NY 8:04:05 PM</span>
+      </div>
+    </div>
+      
+      <!-- Sidebar -->
+      <div id="sidebar" class="sidebar">
+        <div class="sidebar-header-modern">
+          <button class="sidebar-btn-main" disabled>Let's Talk <span class="sidebar-btn-icon"><i class="fa-regular fa-message"></i></span></button>
+          <button class="sidebar-close-modern" onclick="toggleSidebar()">Close <span class="close-underline"></span></button>
+        </div>
+        <div class="sidebar-content-modern">
+          <div class="sidebar-section clickable">
+            <div class="section-title-row">
+              <h3>Book an Intro Call</h3>
+              <span class="section-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <p>Let's talk through your needs, goals, or questions — no pressure.</p>
+          </div>
+          <div class="sidebar-section clickable">
+            <div class="section-title-row">
+              <h3>Start a Project</h3>
+              <span class="section-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <p>Ready to move forward? Share a few quick details and we'll take it from there.</p>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">Phone Support</div>
+            <div class="info-value">Call us <a href="tel:+15163083539">+1.516.308.3539</a></div>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">General Support</div>
+            <div class="info-value"><a href="mailto:hello@bowenmedia.com">hello@bowenmedia.com</a></div>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">Location</div>
+            <div class="info-value">
+              <strong>Long Island, New York</strong><br>
+              183 Mineola Blvd, Mineola, NY 11501<br>
+              Mon-Fri from 9am to 6pm EST
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sidebar-overlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+      <!-- <div class="_header"> -->
+
+        <!-- ./header -->
+      <!-- </div> -->
+    </div>
+
+
+    <section class="mainheaderWork">
+    <div class="headerWork" role="main" aria-labelledby="mainheading">
+      <div class="left">
+        <h1 id="mainheading">Across all</h1>
+        <h2 class="myfont-kattan">Industries &amp; Audiences</h2>
+      </div>
+      <!--  -->
+      <div class="right" aria-label="Description about crafting impactful experiences">
+        <article class="article-text">
+          <p class="">
+          We craft <span class="highlight">impactful experiences</span> for a connected world. Explore our custom web design, branding, &amp; digital marketing portfolio.
+        </p>
+        </article>
+        <div class="bottom-nav" aria-label="View mode selection">
+          <span class="active">Grid</span><span class="inactive">/List</span>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+    </section>
+
+    <!-- <div class="agency-section-image">
+              <img src="assets/images/agency-bg.png" alt="" class="agency-bg">
+          </div> -->
+    <!--  -->
+    <!-- end nav -->
+
+      <!-- featured-section -->
+    <section class="featured-section">
+      <div class="row">
+        <!-- <div class="container"> -->
+
+          
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat featTop1" style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/interaudi-bank-portfolio-thumbnail.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="#">Graphic Design</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>Custom Website Design<span class="myfont-kattan">for Interaudi Bank</span></p>
+                  <p class="_text">Interaudi Bank</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+        <!-- / faet_body-->
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body">
+            <div class="_feat" style="position: relative">
+              <div class="color-overlay" data-color="blue"></div>
+              <div class="featImg">
+                <img src="assets/images/RDP.bin" alt="#" class="" />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Brand Identity</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>Branding for<span class="myfont-kattan"> Financial Services</span></p>
+                  <p class="_text">RDP Advisory</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body featTop1">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat " style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/img-work/Galaxy.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Ux Design</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>Technological Innovation<span class="myfont-kattan">for Premium Brands</span></p>
+                  <p class="_text">Galaxy Universal</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat " style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/img-work/HighLife.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="#">Video Production</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>Industry-Leading<span class="myfont-kattan">Active Apparel</span></p>
+                  <p class="_text">High Life</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body ">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat featTop1" style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/img-work/Meltwater.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">UI/UX Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>Marketing Platform UX Overhaul<span class="myfont-kattan">for Meltwater</span></p>
+                  <p class="_text">Meltwater</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat " style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/img-work/Intellica CRE.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design </a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                  
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>Real Estate Solutions<span class="myfont-kattan">to Attract and Retain</span></p>
+                  <p class="_text">Intelica CRE</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>  
+
+
+  
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat featTop1" style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/img-work/Roadway Moving.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">UI/UX Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>A Nicer Way<span class="myfont-kattan">to Move</span></p>
+                  <p class="_text">Roadway Moving</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat " style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/img-work/Yokohama Tire-1.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">UI/UX Design </a>
+                    </li>
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                  <li>
+                      <a href="#">Web Development </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>A New Experience<span class="myfont-kattan">Streamlined for Performance</span></p>
+                  <p class="_text">Yokohama Tire Corporation</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat featTop1" style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/img-work/Walk-On's.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li><a href="#">UI/UX Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>Digital Experience<span class="myfont-kattan">of The Bistreaux and Bar</span></p>
+                  <p class="_text">Walk-On’s Sports Bistreaux</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat " style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/img-work/SK Signet.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">UI/UX Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>Charging America's<span class="myfont-kattan">EV Revolution</span></p>
+                  <p class="_text">SK Signet America</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat featTop1" style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/img-work/Evolve Houston-1.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">UI/UX Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>An Energized<span class="myfont-kattan">Digital Experience</span></p>
+                  <p class="_text">Evolve Houston</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat " style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/img-work/Rosaprima.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>For Life's<span class="myfont-kattan">Extraordinary Moments</span></p>
+                  <p class="_text">Rosaprima
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+
+
+        <!-- / faet_body-->
+      </div>
+      <!-- </div> -->
+    </section>
+    <!--  /featured-section -->
+
+
+
+
+
+
+
+    <nav class="pagination" aria-label="Pagination navigation">
+      <button aria-label="Previous page" id="prevBtn">PREV</button>
+      <span class="page-number">01</span>
+      <span class="page-number">02</span>
+      <span class="page-number">03</span>
+      <button aria-label="Next page" id="nextBtn">NEXT</button>
+    </nav>
+
+
+
+
+    <footer class="footer" id="footer">
+      <!--  -->
+      <div class="footerBg"></div>
+      <div class="footerItemTop">
+        <span>ARE YOU READY?</span>
+        <div class="footerAnimitionText">
+
+          <ul class="footerAnimitionTextlist">
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover1 dis-block" >let's</span>
+                      <span href="#" class="footerAnimitionHidd dis-block">let's</span>
+                    </li>
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover2 dis-block">do</span>
+                      <span href="#" class="footerAnimitionHidd2 dis-block">do</span>
+                    </li>
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover3 dis-block">This</span>
+                      <span href="#" class="footerAnimitionHidd3 dis-block">This</span>
+                    </li>
+                  </ul>
+
+      </div>
+      </div>
+      <!--  ./footerItemTop -->
+         <dev class="">
+      <div class="footerItemCenter">
+        <ul class="footerItemMenu">
+          <li><a href="#">BOWEN® builds websites that scale.</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <div class="footerTimer">
+          <div class="timer">
+            <span id="dateTime"></span>
+            <p id="greeting"></p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="demo-container">
+          <div class="progress-bar">
+            <div class="progress-bar-value"></div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!-- footerItemCenter -->
+
+      <div class="footerItemBottom">
+        <ul class="footerMenuBottom">
+           <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li>BOWEN® © MMXXV</li>
+        </ul>
+<div class="dropdownfooterToggel">
+  <div id="toggleGBT">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </div>
+
+<div id="menuGBT">
+
+          <!--  -->
+          <div class="dropdownF"  id="fatherItim">
+
+
+            <!-- <div class="container"> -->
+                <div class="ppf">
+                   <ul class="fourBtn">
+                    <li class="_fli">
+                      <a href="#" class="fhow">Some Industries We Serve</a>
+                      <a href="#" class="fhidd">Some Industries We Serve</a>
+                    </li>
+                    <li class="_fli">
+                      <a href="#" class="fhow">Some Markets We Serve</a>
+                      <a href="#" class="fhidd">Some Markets We Serve</a>
+                    </li>
+                  </ul>
+                   <ul class="fItemBtn">
+                    <li class="_fli">
+                      <a href="#" class="fhow">Financial Services</a>
+                      <a href="#" class="fhidd">Financial Services</a>
+                    </li>
+                    <li class="_fli">
+                      <a href="#" class="fhow">Banking</a>
+                      <a href="#" class="fhidd">Banking</a>
+                    </li>
+                      <li class="_fli">
+                      <a href="#" class="fhow">Commercial Real Estate</a>
+                      <a href="#" class="fhidd">Commercial Real Estate</a>
+                    </li>
+                      <li class="_fli">
+                      <a href="#" class="fhow">Franchise</a>
+                      <a href="#" class="fhidd">Franchise</a>
+                    </li>
+                  </ul>
+
+                </div>
+
+              <!-- close my dropdown -->
+
+            <!-- </div> -->
+          </div>
+
+  <!--  -->
+</div>
+<!--  -->
+</div>
+  
+        <!--  -->
+      </div>
+      <!-- footerItemBottom -->
+       </dev>
+      <!-- footerItemBottom -->
+      <!-- </div> -->
+      <div id="footer-fluid-canvas-container" style="position: absolute; left:0; top:0; width:100%; height:100%; pointer-events:none; z-index:1;">
+        <canvas id="animationCanvas" style="width:100%;height:100%;display:block;"></canvas>
+      </div>
+    </footer>
+
+    <!-- ./ -->
+     
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/footerAnimation.js"></script>
+    <script src="assets/js/animitionScrolling.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script> -->
+      <!-- <script src="assets/js/jquery.nicescroll.js"></script> -->
+
+    <!-- Fluid Splash Effect for Footer Only -->
+    <script>
+    (function() {
+      const canvas = document.getElementById('footer-fluid-canvas');
+      const container = document.getElementById('footer-fluid-canvas-container');
+      if (!canvas || !container) return;
+
+      // Resize canvas to fit container
+      function resizeCanvas() {
+        canvas.width = container.offsetWidth;
+        canvas.height = container.offsetHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      // Simple splash effect (for demo, not full fluid sim)
+      let ctx = canvas.getContext('2d');
+      let splashes = [];
+
+      function addSplash(x, y) {
+        splashes.push({x, y, r: 0, alpha: 1});
+      }
+
+      // Listen only on footer
+      container.parentElement.addEventListener('mousemove', function(e) {
+        const rect = container.getBoundingClientRect();
+        if (e.clientY >= rect.top && e.clientY <= rect.bottom) {
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          addSplash(x, y);
+        }
+      });
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        splashes.forEach(splash => {
+          ctx.beginPath();
+          ctx.arc(splash.x, splash.y, splash.r, 0, 2 * Math.PI);
+          ctx.strokeStyle = `rgba(100,200,255,${splash.alpha})`;
+          ctx.lineWidth = 2 + 6 * splash.alpha;
+          ctx.stroke();
+          splash.r += 2;
+          splash.alpha *= 0.94;
+        });
+        // Remove faded splashes
+        splashes = splashes.filter(s => s.alpha > 0.05);
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+    </script>
+
+   
+  </body>
+</html>

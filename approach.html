@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bowenmedia</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Truculenta:opsz@12..72&family=WDXL+Lubrifont+SC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/approch.css">
+    <link rel="stylesheet" href="assets/css/pagestyle.css">
+    
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </head>
+  <body class="">
+
+    <!-- scroll bar -->
+    <div class="header-agency">
+      
+      <!-- Overlay Video Modal -->
+      <!-- scroll bar -->
+      <div class="scroller"></div>
+      <!-- back_video"> -->
+      <nav class="navbar">
+        <div class="row">
+          <div class="col">
+            <div class="nav_item">
+              <a href="#" class="logo" id="navLogo"> 
+                BOW<i class="fa-solid fa-bars"></i>N
+              </a>
+            </div>
+          </div>
+          <!-- dropdown -->
+          <div class="col col_expertise">
+            <div class="nav_item">
+              <div class="_tab" style="border: 1px solid black;">
+                <a href="#" class="link_show  colorBlack"
+                  >Expertise
+                  <i
+                    class="fas fa-hand-peace"
+                    style="font-size: 20px; color: black"
+                  ></i>
+                </a>
+                <a href="#" class="link_hidd  colorBlack"
+                  >Expertise
+                  <i
+                    class="fas fa-hand-peace"
+                    style="font-size: 20px; color: black"
+                  ></i>
+                </a>
+              </div>
+
+              <div class="dropdown-content">
+                <div class="dropdown_tab">
+                  <div class="tabs">
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content1">
+                        Web Design
+                      </div>
+                      <div class="tab _tabHidd" data-content="content1">
+                        Web Design
+                      </div>
+                    </div>
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content2">
+                        Web Design2
+                      </div>
+                      <div class="tab _tabHidd" data-content="content2">
+                        Web Design2
+                      </div>
+                    </div>
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content3">
+                        Web Design3
+                      </div>
+                      <div class="tab _tabHidd" data-content="content3">
+                        Web Design3
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div id="content1" class="content active">
+                      <img
+                        src="assets/images/pexels-pixabay-355952.jpg"
+                        alt="img"
+                      />
+                    </div>
+                    <div id="content2" class="content">
+                      <img
+                        src="assets/images/pexels-mart-production-7718663.jpg"
+                        alt="img"
+                      />
+                    </div>
+                    <div id="content3" class="content">
+                      <img
+                        src="assets/images/pexels-atbo-66986-245240.jpg"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col">
+            <div class="nav_item">
+              <ul class="nav-links">
+                <li class="nav_list">
+                  <a href="#" class="link_show colorBlack">Agency</a>
+                  <a href="#" class="link_hidd colorBlack">Agency</a>
+                </li>
+                <li class="nav_list">
+                  <a href="#" class="link_show colorBlack">Approach</a>
+                  <a href="#" class="link_hidd colorBlack">Approach</a>
+                </li>
+                <li class="nav_list">
+                  <a href="#" class="link_show colorBlack">Work</a>
+                  <a href="#" class="link_hidd colorBlack">Work</a>
+                </li>
+                <li class="nav_list">
+                  <a href="#" class="link_show colorBlack">Insights</a>
+                  <a href="#" class="link_hidd colorBlack">Insights</a>
+                </li>
+              
+                <!-- Mobile close button -->
+                <!-- <li class="mobile-close-btn" >
+                  <i class="fas fa-times"></i>
+                </li> -->
+              </ul>
+              <button
+               class="nav_btn" onclick="toggleSidebar()">
+                <a href="#">let's talk</a>
+                <a href="#" class="_btn">
+                  <i class="fa-solid fa-arrow-right link_show"></i>
+                  <!-- <i class="fa-solid fa-arrow-right link_hidd"></i> -->
+                  <i class="fa-regular fa-face-smile link_hidd"></i>
+                </a>
+              </button>
+              <div class="menu-button" >
+                <span class="menu-text menu_show">menu</span>
+                <span class="menu-text menu_hidd">menu</span>
+              </div>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+        
+      </nav>
+      <!-- </div> -->
+
+       <!-- Mobile Menu Overlay -->
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-logo">BOWEN</div>
+        <div class="mobile-menu-actions">
+          <button class="mobile-menu-talk">Let's Talk <span class="arrow">→</span></button>
+          <button class="mobile-menu-close">Close</button>
+        </div>
+      </div>
+      <ul class="mobile-menu-list">
+        <li><span class="menu-num">01</span> <span class="menu-title">Agency</span></li>
+        <li><span class="menu-num">02</span> <span class="menu-title">Expertise</span></li>
+        <li><span class="menu-num">03</span> <span class="menu-title">Approach</span></li>
+        <li><span class="menu-num">04</span> <span class="menu-title">Work</span></li>
+        <li><span class="menu-num">05</span> <span class="menu-title">Insights</span></li>
+        <li><span class="menu-num">01</span> <span class="menu-title">Agency</span></li>
+        <li><span class="menu-num">02</span> <span class="menu-title">Expertise</span></li>
+        <li><span class="menu-num">03</span> <span class="menu-title">Approach</span></li>
+        <li><span class="menu-num">04</span> <span class="menu-title">Work</span></li>
+        <li><span class="menu-num">05</span> <span class="menu-title">Insights</span></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <span class="mobile-menu-time" id="mobileMenuTime">NY 8:04:05 PM</span>
+      </div>
+    </div>
+      
+      <!-- Sidebar -->
+      <div id="sidebar" class="sidebar">
+        <div class="sidebar-header-modern">
+          <button class="sidebar-btn-main" disabled>Let's Talk <span class="sidebar-btn-icon"><i class="fa-regular fa-message"></i></span></button>
+          <button class="sidebar-close-modern" onclick="toggleSidebar()">Close <span class="close-underline"></span></button>
+        </div>
+        <div class="sidebar-content-modern">
+          <div class="sidebar-section clickable">
+            <div class="section-title-row">
+              <h3>Book an Intro Call</h3>
+              <span class="section-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <p>Let's talk through your needs, goals, or questions — no pressure.</p>
+          </div>
+          <div class="sidebar-section clickable">
+            <div class="section-title-row">
+              <h3>Start a Project</h3>
+              <span class="section-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <p>Ready to move forward? Share a few quick details and we'll take it from there.</p>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">Phone Support</div>
+            <div class="info-value">Call us <a href="tel:+15163083539">+1.516.308.3539</a></div>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">General Support</div>
+            <div class="info-value"><a href="mailto:hello@bowenmedia.com">hello@bowenmedia.com</a></div>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">Location</div>
+            <div class="info-value">
+              <strong>Long Island, New York</strong><br>
+              183 Mineola Blvd, Mineola, NY 11501<br>
+              Mon-Fri from 9am to 6pm EST
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sidebar-overlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+      <!-- <div class="_header"> -->
+
+        <!-- ./header -->
+      <!-- </div> -->
+    </div>
+    <!-- end nav -->
+
+<!-- section header text -->
+    <section class="sectionheaderAproach">
+      <div class="top-text scroll-animate">
+        Whether you're looking for a long-term partner that functions as your full-time web and marketing arm, or looking to start with something more à la carte, our approach adapts to you.
+      </div>
+      <div class="big-heading"> <p id="typingTop"></p> </div>
+      <div class="big-subheading"> <p id="typingBottom"></p> </div>
+      <div class="rotate-vertical-text scroll-animate">Ways we work <i class="fa fa-face-smile"></i> </div>
+      <div class="scroll-indicator scroll-animate">Keep Scrolling</div>
+    </section>
+
+    <script>
+        function typeText(element, text, speed) {
+            let index = 0;
+            function type() {
+                if (index < text.length) {
+                    element.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, speed);
+                } else {
+                    element.style.borderRight = 'none';
+                }
+            }
+            type();
+        }
+
+        const typingTop = document.getElementById('typingTop');
+        const typingBottom = document.getElementById('typingBottom');
+        const textTop = "Two Pricing Models."; // النص العلوي
+        const textBottom = "One Approach."; // النص السفلي
+        const typingSpeed = 200; // السرعة بالملي ثانية
+
+        typeText(typingTop, textTop, typingSpeed);
+        setTimeout(() => typeText(typingBottom, textBottom, typingSpeed), textTop.length * typingSpeed + 500);
+    </script>
+<!-- typing text header ----- -->
+
+ <div class="mainWrapperAcord relative w-100" id="mainChingeColor" style="padding-top: 60px;">
+<div class="approach-wrapper relative w-100 over-h approachWrapp1" id="sectionapp1">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <div class="relative ">
+        <div class="">
+    <p class="title4 scroll-animate">→ Your Extended Team</p>
+    <h1 class="title3 cWhite scroll-animate">Ongoing<span class="text-n myfont-kattan"> Partnership</span></h1>
+
+    <ul class="hoverList tt-c scroll-animate" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style="border-bottom: 1px solid white;">
+            <!-- <span> -->
+            <a href="#" class="t2 cWhite">Book an intro call</a>
+            <a href="#" class="t3 cWhite">Book an intro call</a>
+            <!-- </span> -->
+          </li>
+        </ul>
+  </div>
+        <!--  -->
+      </div>
+    </div>
+    <!-- .col -->
+     <div class="col-lg-6 col-md-12">
+      <div class="relative over-h w-100">
+        <p class="text-p text-21px cWhite scroll-animate">
+          Think of us as your on-demand marketing team. Tap into the skills you need, when you need them. One flat monthly fee gives you flexible access to our creative, technical, and strategic experts. We handle as much or as little as your priorities require, keeping momentum strong every month.
+        </p>
+      </div>
+      <div class="secAcord1 approachAccordion1 relative w-100">
+        <div class="accordion" id="accordionExample">
+  <div class="accordion-item ">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2">Priority Access to a Full Marketing Team<i class="fa fa-plus floatR"></i></a>
+            <a href="#" class="t3 ">Priority Access to a Full Marketing Team<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="cWhite">
+          Gain direct access to a team of experts without the overhead of a full-time hire. We move faster, stay aligned with your goals, and tackle what matters most.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item ">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2">Smarter Spend than Hiring In-House<i class="fa fa-plus floatR"></i></a>
+            <a href="#" class="t3">Smarter Spend than Hiring In-House<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul>  
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="cWhite">
+          Our subscription model gives you diverse expertise for a fraction of the cost and commitment of a full-time hire.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item ">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2">Support That Flexes with Your Needs<i class="fa fa-plus floatR"></i></a>
+            <a href="#" class="t3">Support That Flexes with Your Needs<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul> 
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="cWhite">
+          We align with your team’s goals and adjust our focus as priorities shift—keeping strategy and execution in sync.
+        </p>
+      </div>
+    </div>
+  </div>
+<!--  -->
+   <div class="accordion-item ">
+    <h2 class="accordion-header" id="headingfour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2">A True Partner for the Long Run <i class="fa fa-plus floatR"></i> </a>
+            <a href="#" class="t3">A True Partner for the Long Run <i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul> 
+      </button>
+    </h2>
+    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="cWhite">
+          We’re invested in your growth. Our collaborative approach is built on trust, adaptability, and results.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+   <div class="accordion-item ">
+    <h2 class="accordion-header" id="headingfive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2">Strategy Meets Execution <i class="fa fa-plus floatR"></i></a>
+            <a href="#" class="t3">Strategy Meets Execution<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul> 
+      </button>
+    </h2>
+    <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="cWhite">
+          Every action we take ladders up to your big picture. No wasted effort—just smart, strategic moves that drive outcomes.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+        <!--  -->
+      </div>
+    </div>
+    <!-- col -->
+  </div>
+</div>
+<!-- ./ approach-wrapper -->
+ <div class="approach-wrapper relative w-100 over-h" style="padding: 6em 0;" id="sectionapp2">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <div class="relative w-100 over-h">
+        <div class="">
+    <p class="title4 cWhite scroll-animate">→ Your Extended Team</p>
+    <h1 class="title3 cWhite scroll-animate">The<span class="text-n myfont-kattan">Rates</span></h1>
+
+    <ul class="hoverList tt-c scroll-animate" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style="border-bottom: 1px solid white;">
+            <!-- <span> -->
+            <a href="#" class="t2 cWhite">Book an intro call</a>
+            <a href="#" class="t3 cWhite">Book an intro call</a>
+            <!-- </span> -->
+          </li>
+        </ul>
+  </div>
+        <!--  -->
+      </div>
+    </div>
+    <!-- .col -->
+     <div class="col-lg-6 col-md-12">
+      <div class="relative w-100 over-h">
+        <h1 class="_bigtext text-p cWhite scroll-animate">How We Price Partnerships</h1>
+      </div>
+      <div class="secAcord1 relative w-100 over-h scroll-animate">
+        <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2">What does it cost?<i class="fa fa-plus floatR"></i></a>
+            <a href="#" class="t3">What does it cost?<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="cWhite">
+          Our ongoing partnerships typically start at $3,500/month, with many brands investing more for dedicated support, strategy, and execution. We’ll recommend the right plan based on your needs — whether it’s consistent monthly momentum or scaling for growth.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2">What impacts the monthly rate?<i class="fa fa-plus floatR"></i></a>
+            <a href="#" class="t3">What impacts the monthly rate?<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul>  
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="cWhite">
+          Your monthly rate is based on the size and complexity of your digital presence, the amount of design, development, or marketing work required, and how quickly you want to move. We’ll align the plan to match your objectives and internal resources.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2">Do you work with large retainers?<i class="fa fa-plus floatR"></i></a>
+            <a href="#" class="t3">Do you work with large retainers?<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul> 
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="cWhite">
+          Yes. Many of our clients engage us at $10,000 per month and up, where we function as an embedded digital and marketing partner. This allows us to create the most impact, handle larger initiatives, and maintain flexibility as priorities shift.
+        </p>
+      </div>
+    </div>
+  </div>
+<!--  -->
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingfour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2">What if I’m not ready for a monthly retainer?<i class="fa fa-plus floatR"></i> </a>
+            <a href="#" class="t3">What if I’m not ready for a monthly retainer?<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul> 
+      </button>
+    </h2>
+    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="cWhite">
+          We also offer project-based pricing for companies starting with a specific initiative, like a website redesign or marketing campaign. This is a great way to experience our team before scaling into a long-term partnership.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+</div>
+
+
+        <!--  -->
+      </div>
+    </div>
+    <!-- col -->
+  </div>
+</div>
+<!-- ./ approach-wrapper -->
+</div>
+
+
+<div class="approach-wrapper relative w-100 over-h " style="margin: 100px auto;">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <div class="relative w-100 over-h ">
+        <div class="">
+    <p class="title4 scroll-animate">→ Purpose-Built for Impact</p>
+    <h1 class="title3 colorBlack scroll-animate">High-Impact <span class="text-n myfont-kattan">Projects</span></h1>
+
+    <ul class="hoverList tt-c scroll-animate" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+      <li class="t1 colorBlack" style="border-bottom: 1px solid black;">
+            <!-- <span> -->
+            <a href="#" class="t2 colorBlack">Book an intro call</a>
+            <a href="#" class="t3 colorBlack">Book an intro call</a>
+            <!-- </span> -->
+          </li>
+        </ul>
+  </div>
+        <!--  -->
+      </div>
+    </div>
+    <!-- .col -->
+     <div class="col-lg-6 col-md-12">
+      <div class="relative w-100 over-h">
+        <p class="text-p text-21px scroll-animate">
+          We deliver high-impact project-based solutions tailored to your goals. Whether you need support in a specific area or a larger initiative, we approach every project with craftsmanship, precision, and care. Each engagement is built around your exact needs.
+        </p>
+      </div>
+      <div class="secAcord2 secAcord1 relative w-100 over-h scroll-animate">
+        <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2 colorBlack">Website Design and Development<i class="fa fa-plus floatR"></i></a>
+            <a href="#" class="t3 colorBlack">Website Design and Development<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+          Tailored websites designed to engage, convert, and perform.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2 colorBlack">Brand Identity and Messaging<i class="fa fa-plus floatR"></i></a>
+            <a href="#" class="t3 colorBlack">Brand Identity and Messaging<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul>  
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+          Positioning your brand for impact with visual and verbal identity.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2 colorBlack">UX/UI and Digital Product Design<i class="fa fa-plus floatR"></i></a>
+            <a href="#" class="t3 colorBlack">UX/UI and Digital Product Design<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul> 
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+          Smart interfaces built to deliver seamless user experiences.
+        </p>
+      </div>
+    </div>
+  </div>
+<!--  -->
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingfour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2 colorBlack">Campaign Creative and Landing Pages<i class="fa fa-plus floatR"></i> </a>
+            <a href="#" class="t3 colorBlack">Campaign Creative and Landing Pages<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul> 
+      </button>
+    </h2>
+    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+          Targeted digital campaigns designed for results.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingfive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+        <ul class="hoverList w-100" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1" style=" border-bottom: none;">
+            <a href="#" class="t2 colorBlack">SEO and Performance Optimization<i class="fa fa-plus floatR"></i></a>
+            <a href="#" class="t3 colorBlack">SEO and Performance Optimization<i class="fa fa-plus floatR"></i></a>
+          </li>
+        </ul> 
+      </button>
+    </h2>
+    <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>
+          Technical audits, content updates, and improvements to boost visibility.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+        <!--  -->
+      </div>
+    </div>
+    <!-- col -->
+  </div>
+</div>
+<!-- ./ approach-wrapper -->
+
+<div class="approach-wrapper relative w-100 over-h">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <div class="relative over-h w-100 ">
+        <div class="">
+    <p class="small-title scroll-animate">→ Two Pricing Models</p>
+    <h1 class="text-bold-1 scroll-animate">Find the <span class="text-n myfont-kattan">Right Fit</span></h1>
+
+    <ul class="hoverList tt-c scroll-animate" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              <li class="t1 colorBlack" style="">
+            <!-- <span> -->
+            <a href="#" class="t2 colorBlack">Book an intro call</a>
+            <a href="#" class="t3 colorBlack">Book an intro call</a>
+            <!-- </span> -->
+          </li>
+        </ul>
+    <!-- <a href="#" class="intro-call">Book an intro call</a> -->
+  </div>
+        <!--  -->
+      </div>
+    </div>
+    <!-- .col -->
+     <div class="col-lg-6 col-md-12">
+      <div class="relative over-h w-100">
+        <p class="text-p text-21px scroll-animate">
+          Not sure which approach is best for your company? Here are a few scenarios that can guide you in determining the optimal choice.
+        </p>
+        <div class="art-approach relative">
+          <h2 class="title3 text-p scroll-animate">Ongoing Partnership</h2>
+          <article>
+            <span class="des-b text-16px scroll-animate">Are you a Marketing Director looking for a few more hands to execute your strategy?</span>
+            <span class="des-b text-16px scroll-animate">Do you manage multiple projects, campaigns, sites, or brands that require ongoing attention?</span>
+            <span class="des-b text-16px scroll-animate">Are you an executive deciding how to best invest in marketing resources?</span>
+            <span class="des-b text-16px scroll-animate">Could you benefit from ongoing strategy, execution, and accountability?</span>
+            <span class="des-b text-16px scroll-animate">Does the marketing department feel spread thin and needs some extra support?</span>
+          </article>
+        </div>
+        <!-- ./art-approach -->
+         <div class="art-approach relative over-h w-100">
+          <h2 class="title3 text-p scroll-animate">Project-Based</h2>
+          <article>
+            <span class="des-b text-16px scroll-animate">Do you have your needs and scope of work clearly defined to share?</span>
+            <span class="des-b text-16px scroll-animate">Are you facing a tight deadline or immediate need that needs to be addressed?</span>
+            <span class="des-b text-16px scroll-animate">Are your needs based on something that does not require ongoing strategy or services?</span>
+            <span class="des-b text-16px scroll-animate">Are you looking for a reputable company that can deliver on a very important project?
+</span>
+            <span class="des-b text-16px scroll-animate">Is your organization legally limited from engaging in an ongoing subscription partnership?
+</span>
+          </article>
+        </div>
+        <!-- ./art-approach -->
+         <div class="art-approach relative over-h w-100">
+          <h2 class="title3 text-p scroll-animate">Need to talk it out? We’re a call away.</h2>
+          <article>
+            <span class="des-b text-16px scroll-animate">Things are not always black and white, or ever static. In fact, each partnership we form with our clients is unique in objectives, challenges, audiences, needs, and goals, in addition to how they evolve over time. You may have many priorities, and we’re here to help you arrive at the best option for the business you represent, aiming to accomplish great things together along the way.</span>
+          </article>
+        </div>
+        <!-- ./art-approach -->
+
+      </div>
+     
+
+    </div>
+    <!-- col -->
+  </div>
+</div>
+<!-- ./ approach-wrapper -->
+
+
+
+<!-- ---------------------------------- -->
+   <!-- button container  -->
+    <div class="fixed-bar">
+      
+      <button class="tab-button" data-target="agency">Agency Subscription.</button>
+      <button class="tab-button" data-target="project">Project-Based.</button>
+      <button class="tab-button" data-target="which">Which is the one for me?</button>
+      <div class="consult-btn" onclick="document.getElementById('consult').scrollIntoView({ behavior: 'smooth' })">
+        Schedule a Consultation ✌️
+      </div>
+    </div>
+  
+  
+
+<!-- footer -->
+    <footer class="footer" id="footer">
+      <!--  -->
+      <div class="footerBg"></div>
+      <div class="footerItemTop">
+        <span>ARE YOU READY?</span>
+        <div class="footerAnimitionText">
+
+          <ul class="footerAnimitionTextlist">
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover1 dis-block" >let's</span>
+                      <span href="#" class="footerAnimitionHidd dis-block">let's</span>
+                    </li>
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover2 dis-block">do</span>
+                      <span href="#" class="footerAnimitionHidd2 dis-block">do</span>
+                    </li>
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover3 dis-block">This</span>
+                      <span href="#" class="footerAnimitionHidd3 dis-block">This</span>
+                    </li>
+                  </ul>
+
+      </div>
+      </div>
+      <!--  ./footerItemTop -->
+         <dev class="">
+      <div class="footerItemCenter">
+        <ul class="footerItemMenu">
+          <li><a href="#">BOWEN® builds websites that scale.</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <div class="footerTimer">
+          <div class="timer">
+            <span id="dateTime"></span>
+            <p id="greeting"></p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="demo-container">
+          <div class="progress-bar">
+            <div class="progress-bar-value"></div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!-- footerItemCenter -->
+
+      <div class="footerItemBottom">
+        <ul class="footerMenuBottom">
+           <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li>BOWEN® © MMXXV</li>
+        </ul>
+<div class="dropdownfooterToggel">
+  <div id="toggleGBT">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </div>
+
+<div id="menuGBT">
+
+          <!--  -->
+          <div class="dropdownF"  id="fatherItim">
+
+
+            <!-- <div class="container"> -->
+                <div class="ppf">
+                   <ul class="fourBtn">
+                    <li class="_fli">
+                      <a href="#" class="fhow">Some Industries We Serve</a>
+                      <a href="#" class="fhidd">Some Industries We Serve</a>
+                    </li>
+                    <li class="_fli">
+                      <a href="#" class="fhow">Some Markets We Serve</a>
+                      <a href="#" class="fhidd">Some Markets We Serve</a>
+                    </li>
+                  </ul>
+                   <ul class="fItemBtn">
+                    <li class="_fli">
+                      <a href="#" class="fhow">Financial Services</a>
+                      <a href="#" class="fhidd">Financial Services</a>
+                    </li>
+                    <li class="_fli">
+                      <a href="#" class="fhow">Banking</a>
+                      <a href="#" class="fhidd">Banking</a>
+                    </li>
+                      <li class="_fli">
+                      <a href="#" class="fhow">Commercial Real Estate</a>
+                      <a href="#" class="fhidd">Commercial Real Estate</a>
+                    </li>
+                      <li class="_fli">
+                      <a href="#" class="fhow">Franchise</a>
+                      <a href="#" class="fhidd">Franchise</a>
+                    </li>
+                  </ul>
+
+                </div>
+
+              <!-- close my dropdown -->
+
+            <!-- </div> -->
+          </div>
+
+  <!--  -->
+</div>
+<!--  -->
+</div>
+  
+        <!--  -->
+      </div>
+      <!-- footerItemBottom -->
+       </dev>
+      <!-- footerItemBottom -->
+      <!-- </div> -->
+      <div id="footer-fluid-canvas-container" style="position: absolute; left:0; top:0; width:100%; height:100%; pointer-events:none; z-index:1;">
+        <canvas id="animationCanvas" style="width:100%;height:100%;display:block;"></canvas>
+      </div>
+    </footer>
+
+    <!-- ./ -->
+     
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/footerAnimation.js"></script>
+    <script src="assets/js/animitionScrolling.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Fluid Splash Effect for Footer Only -->
+    <script>
+    (function() {
+      const canvas = document.getElementById('footer-fluid-canvas');
+      const container = document.getElementById('footer-fluid-canvas-container');
+      if (!canvas || !container) return;
+
+      // Resize canvas to fit container
+      function resizeCanvas() {
+        canvas.width = container.offsetWidth;
+        canvas.height = container.offsetHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      // Simple splash effect (for demo, not full fluid sim)
+      let ctx = canvas.getContext('2d');
+      let splashes = [];
+
+      function addSplash(x, y) {
+        splashes.push({x, y, r: 0, alpha: 1});
+      }
+
+      // Listen only on footer
+      container.parentElement.addEventListener('mousemove', function(e) {
+        const rect = container.getBoundingClientRect();
+        if (e.clientY >= rect.top && e.clientY <= rect.bottom) {
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          addSplash(x, y);
+        }
+      });
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        splashes.forEach(splash => {
+          ctx.beginPath();
+          ctx.arc(splash.x, splash.y, splash.r, 0, 2 * Math.PI);
+          ctx.strokeStyle = `rgba(100,200,255,${splash.alpha})`;
+          ctx.lineWidth = 2 + 6 * splash.alpha;
+          ctx.stroke();
+          splash.r += 2;
+          splash.alpha *= 0.94;
+        });
+        // Remove faded splashes
+        splashes = splashes.filter(s => s.alpha > 0.05);
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+    </script>
+
+   
+  </body>
+</html>

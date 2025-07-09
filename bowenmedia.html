@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bowenmedia</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Truculenta:opsz@12..72&family=WDXL+Lubrifont+SC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+  </head>
+  <body>
+    <header>
+      <div class="back_video">
+        <div class="headergradientBg"></div>
+        <video
+          autoplay
+          loop
+          muted
+          plays-inline
+          class="object-cover main-bg-video"
+          src="https://x5ausmalr0axbi2v.public.blob.vercel-storage.com/Homepage/BOWEN%20Company%20Video%20Homepage-S5LOEUs6aPaNMsWWz9Td1IgKrDv938.mp4"
+        ></video>
+      </div>
+      <!-- Overlay Video Modal -->
+      <div id="videoOverlay" class="video-overlay">
+        <span class="close-btn" id="closeOverlay">&times;</span>
+        <video id="fullscreenVideo" controls autoplay></video>
+      </div>
+      <!-- scroll bar -->
+      <div class="scroller"></div>
+      <!-- back_video"> -->
+      <nav class="navbar">
+        <div class="row">
+          <div class="col">
+            <div class="nav_item">
+              <a href="#" class="logo" id="navLogo"> 
+                BOW<i class="fa-solid fa-bars"></i>N
+              </a>
+            </div>
+          </div>
+          <!-- dropdown -->
+          <div class="col col_expertise">
+            <div class="nav_item">
+              <div class="_tab">
+                <a href="#" class="link_show"
+                  >Expertise
+                  <i
+                    class="fas fa-hand-peace"
+                    style="font-size: 20px; color: white"
+                  ></i>
+                </a>
+                <a href="#" class="link_hidd"
+                  >Expertise
+                  <i
+                    class="fas fa-hand-peace"
+                    style="font-size: 20px; color: white"
+                  ></i>
+                </a>
+              </div>
+
+              <div class="dropdown-content">
+                <!-- <hr class="menuHR"> -->
+                <!-- <span class="dataTabNav"></span> -->
+                <div class="dropdown_tab">
+                
+                  <div class="tabs">
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content1">
+                        Web Design
+                      </div>
+                      <div class="tab _tabHidd" data-content="content1">
+                        Web Design
+                      </div>
+                    </div>
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content2">
+                        Digital Marketing
+                      </div>
+                      <div class="tab _tabHidd" data-content="content2">
+                        Digital Marketing
+                      </div>
+                    </div>
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content3">
+                        Brand Identity
+                      </div>
+                      <div class="tab _tabHidd" data-content="content3">
+                       Brand Identity
+                      </div>
+                    </div>
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content4">
+                        Digital Strategy
+                      </div>
+                      <div class="tab _tabHidd" data-content="content4">
+                       Digital Strategy
+                      </div>
+                    </div>
+                    <div class="tabEffect">
+                      <div class="tab _tabShow" data-content="content5">
+                        All Expertise
+                      </div>
+                      <div class="tab _tabHidd" data-content="content5">
+                       All Expertise
+                      </div>
+                    </div>
+                  </div>
+                  <!-- -->
+                  <div class="tab-content">
+                    <div id="content1" class="content active">
+                      <img
+                        src="assets/images/Web Design and Website Development.bin"
+                        alt="img"
+                      />
+                    </div>
+                    <div id="content2" class="content">
+                      <img
+                        src="assets/images/Digital Marketing Services.bin"
+                        alt="img"
+                      />
+                    </div>
+                    <div id="content3" class="content">
+                      <img
+                        src="assets/images/Brand Identity Services.bin"
+                        alt="img"
+                      />
+                    </div>
+                    <div id="content4" class="content">
+                      <img
+                        src="assets/images/Digital Strategy and Marketing Services.bin"
+                        alt="img"
+                      />
+                    </div>
+                    <div id="content5" class="content">
+                      <img
+                        src="assets/images/Digital Agency Expertise.bin"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                  </div>
+
+                <!-- </div> -->
+                <!--  -->
+              </div>
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col">
+            <div class="nav_item navz-i">
+              <ul class="nav-links">
+                <li class="nav_list">
+                  <a href="our-agency.html" class="link_show">Agency</a>
+                  <a href="our-agency.html" class="link_hidd">Agency</a>
+                </li>
+                <li class="nav_list">
+                  <a href="approach.html" class="link_show">Approach</a>
+                  <a href="approach.html" class="link_hidd">Approach</a>
+                </li>
+                <li class="nav_list">
+                  <a href="work.html" class="link_show">Work</a>
+                  <a href="work.html" class="link_hidd">Work</a>
+                </li>
+                <li class="nav_list">
+                  <a href="#" class="link_show">Insights</a>
+                  <a href="#" class="link_hidd">Insights</a>
+                </li>
+              
+                <!-- Mobile close button -->
+                <li class="mobile-close-btn" >
+                  <i class="fas fa-times"></i>
+                </li>
+              </ul>
+              <button
+               class="nav_btn" onclick="toggleSidebar()">
+                <a href="#">let's talk</a>
+                <a href="#" class="_btn">
+                  <i class="fa-solid fa-arrow-right link_show"></i>
+                  <!-- <i class="fa-solid fa-arrow-right link_hidd"></i> -->
+                  <i class="fa-regular fa-face-smile link_hidd"></i>
+                </a>
+              </button>
+              <div class="menu-button" >
+                <span class="menu-text menu_show">menu</span>
+                <span class="menu-text menu_hidd">menu</span>
+              </div>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+        
+      </nav>
+      <!-- </div> -->
+
+       <!-- Mobile Menu Overlay -->
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-logo">BOWEN</div>
+        <div class="mobile-menu-actions">
+          <button class="mobile-menu-talk">Let's Talk <span class="arrow">→</span></button>
+          <button class="mobile-menu-close">Close</button>
+        </div>
+      </div>
+      <ul class="mobile-menu-list">
+        <li><span class="menu-num">01</span> <span class="menu-title">Agency</span></li>
+        <li><span class="menu-num">02</span> <span class="menu-title">Expertise</span></li>
+        <li><span class="menu-num">03</span> <span class="menu-title">Approach</span></li>
+        <li><span class="menu-num">04</span> <span class="menu-title">Work</span></li>
+        <li><span class="menu-num">05</span> <span class="menu-title">Insights</span></li>
+        <li><span class="menu-num">01</span> <span class="menu-title">Agency</span></li>
+        <li><span class="menu-num">02</span> <span class="menu-title">Expertise</span></li>
+        <li><span class="menu-num">03</span> <span class="menu-title">Approach</span></li>
+        <li><span class="menu-num">04</span> <span class="menu-title">Work</span></li>
+        <li><span class="menu-num">05</span> <span class="menu-title">Insights</span></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <span class="mobile-menu-time" id="mobileMenuTime">NY 8:04:05 PM</span>
+      </div>
+    </div>
+      
+      <!-- Sidebar -->
+      <div id="sidebar" class="sidebar">
+        <div class="sidebar-header-modern">
+          <button class="sidebar-btn-main" disabled>Let's Talk <span class="sidebar-btn-icon"><i class="fa-regular fa-message"></i></span></button>
+          <button class="sidebar-close-modern" onclick="toggleSidebar()">Close <span class="close-underline"></span></button>
+        </div>
+        <div class="sidebar-content-modern">
+          <div class="sidebar-section clickable">
+            <div class="section-title-row">
+              <h3>Book an Intro Call</h3>
+              <span class="section-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <p>Let's talk through your needs, goals, or questions — no pressure.</p>
+          </div>
+          <div class="sidebar-section clickable">
+            <div class="section-title-row">
+              <h3>Start a Project</h3>
+              <span class="section-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <p>Ready to move forward? Share a few quick details and we'll take it from there.</p>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">Phone Support</div>
+            <div class="info-value">Call us <a href="tel:+15163083539">+1.516.308.3539</a></div>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">General Support</div>
+            <div class="info-value"><a href="mailto:hello@bowenmedia.com">hello@bowenmedia.com</a></div>
+          </div>
+          <div class="sidebar-section info">
+            <div class="info-label">Location</div>
+            <div class="info-value">
+              <strong>Long Island, New York</strong><br>
+              183 Mineola Blvd, Mineola, NY 11501<br>
+              Mon-Fri from 9am to 6pm EST
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sidebar-overlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+      
+      <div class="_header">
+        <div class="header_section">
+          <!-- Custom Cursor Button -->
+          <div class="custom-cursor">
+            <button class="showreel-btn">
+              <span class="watch-text">Watch</span>
+              <span class="showreel-text">Show Reel</span>
+            </button>
+          </div>
+
+          <div class="hero-top-bar">
+            <hr class="hero-hr" />
+            <span class="hero-mini-title">DESIGN, DEVELOP, DELIVER™</span>
+          </div>
+          <div class="textHeader">
+            
+            <h1 class="hero-main-title">Strategic Web Design</h1>
+            <h2 class="hero-sub-title">
+              <p class="hero-ny ">
+                <span class="hero-style"> from</span> 
+                <span class="hero-style">New</span> 
+                <span class="hero-style">York</span>
+              </p>
+            </h2>
+            <!-- <div class="hero_lineHeader"> -->
+              
+            <p class="hero-desc">
+              <span class="hero_lineHeader">
+              <i class="fa-regular fa-face-smile link_hidd"></i>
+            </span>
+              As a New York web design agency, BOWEN® creates digital
+              experiences that connect strategy and design. We build websites
+              that drive results, combining creativity, technology, and SEO best
+              practices. 
+            </p>
+          </div>
+          <div class="hero-actions-bar">
+            <a href="#" class="hero-action discover-action"
+              >Discover Our Work</a
+            >
+            <a href="#" class="hero-action">Meet the Agency</a>
+            <a href="#" class="hero-action">Start a Project</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--  -->
+    <!-- end nav -->
+    <!-- section -->
+
+    <section class="wrapper-section text-center py-5">
+      <div class="container">
+        <h1 class="main-title scroll-animate">Modern Websites Built for</h1>
+        <h2 class="sub-title myfont-kattan scroll-animate">Growth and Performance</h2>
+      </div>
+    </section>
+    <!--  /section -->
+
+      <!-- featured-section -->
+    <section class="featured-section featured-dis-none">
+      <div class="row">
+        <!-- <div class="container"> -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="featText">
+            <p class="_featText scroll-animate">Featured Projects</p>
+            <a href="#" class="featShow scroll-animate">
+              <span class="featanimit1">Show me more</span>
+              <span class="featanimit2">Show me more</span>
+              
+            </a>
+          </div>
+
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat featTop1" style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/interaudi-bank-portfolio-thumbnail.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="#">Graphic Design</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>Custom Website Design<span class="myfont-kattan">for Interaudi Bank</span></p>
+                  <p class="_text">Interaudi Bank</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+        <!-- / faet_body-->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="featText">
+            <!-- <a href="#" class="featShow">Show me more</a> -->
+          </div>
+          <div class="faet_body">
+            <div class="_feat featTop2" style="position: relative">
+              <div class="color-overlay" data-color="yellow"></div>
+              <div class="featImg">
+                <img src="assets/images/Meltwater.bin" alt="#" class="" />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">UI/UX Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="#">Graphic Design</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>
+                    Marketing Platform UX Overhaul <span class="myfont-kattan">for Meltwater</span>
+                  </p>
+                  <p class="_text">Meltwater</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+          <!-- /col -->
+        </div>
+        <!-- / faet_body-->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="featText HiddMdScrean">
+            <p class="divText scroll-animate ">
+              Dive into our recent work, where every project is a tailored
+              solution meticulously crafted to tackle the unique challenges at
+              hand.
+            </p>
+          </div>
+          <div class="faet_body">
+            <div class="_feat featTop3" style="position: relative">
+              <div class="color-overlay" data-color="blue"></div>
+              <div class="featImg">
+                <img src="assets/images/RDP.bin" alt="#" class="" />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Brand Identity</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>Branding for<span class="myfont-kattan"> Financial Services</span></p>
+                  <p class="_text">RDP Advisory</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+        <!-- / faet_body-->
+      </div>
+      <!-- </div> -->
+    </section>
+    <!--  /featured-section -->
+
+    
+    <!-- <section class="slider_progress_mobileScrean"> -->
+
+    <!-- </section>  -->
+
+<section class="swiper-mobile-section">
+  <div class="featTextMobile">
+            <p class="text-center scroll-animate ">
+              Dive into our recent work, where every project is a tailored
+              solution meticulously crafted to tackle the unique challenges at
+              hand.
+            </p>
+          </div>
+<!-- Swiper -->
+ <div class="featTextMobile">
+            <p class="textMoble scroll-animate">Featured Projects</p>
+            <a href="#" class="featShowMobile scroll-animate">Show me more</a>
+          </div>
+<div class="swiper-container">
+  <!-- <div class="row"> -->
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+          <!-- <div class="col-lg-12 col-sm-12"> -->
+
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat" style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/interaudi-bank-portfolio-thumbnail.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="#">Graphic Design</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom scroll-animate">
+                  <p>Custom Website Design<span class="myfont-kattan">for Interaudi Bank</span></p>
+                  <p class="_text">Interaudi Bank</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        <!-- </div> -->
+        <!-- / faet_body-->
+      <!--  /swiper-slide -->
+    </div>
+    <!--  -->
+    <div class="swiper-slide ">
+      <!-- <div class="col-lg-12 col-sm-12"> -->
+          <div class="featText">
+            <!-- <a href="#" class="featShow">Show me more</a> -->
+          </div>
+          <div class="faet_body">
+            <div class="_feat" style="position: relative">
+              <div class="color-overlay" data-color="yellow"></div>
+              <div class="featImg">
+                <img src="assets/images/Meltwater.bin" alt="#" class="" />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">UI/UX Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="#">Graphic Design</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom scroll-animate">
+                  <p>
+                    Marketing Platform UX Overhaul <span class="myfont-kattan">for Meltwater</span>
+                  </p>
+                  <p class="_text">Meltwater</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+          <!-- /col -->
+        <!-- </div> -->
+        <!-- / faet_body-->
+      <!-- ./swiper-slder -->
+    </div>
+    <div class="swiper-slide">
+        <!-- <div class="col-lg-12 col-sm-12"> -->
+          <div class="faet_body">
+            <div class="_feat" style="position: relative">
+              <div class="color-overlay" data-color="blue"></div>
+              <div class="featImg">
+                <img src="assets/images/RDP.bin" alt="#" class="" />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Brand Identity</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom scroll-animate">
+                  <p>Branding for<span class="myfont-kattan"> Financial Services</span></p>
+                  <p class="_text">RDP Advisory</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        <!-- </div> -->
+        <!-- / faet_body-->
+
+      <!-- ./swiper-slide -->
+    </div>
+  <div class="swiper-slide">
+          <!-- <div class="col-lg-12 col-sm-12"> -->
+
+          <div class="faet_body">
+            <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="_feat" style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/interaudi-bank-portfolio-thumbnail.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="#">Graphic Design</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom scroll-animate">
+                  <p>Custom Website Design<span class="myfont-kattan">for Interaudi Bank</span></p>
+                  <p class="_text">Interaudi Bank</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        <!-- </div> -->
+        <!-- / faet_body-->
+      <!--  /swiper-slide -->
+    </div>
+    <!--  -->
+    <div class="swiper-slide ">
+      <!-- <div class="col-lg-12 col-sm-12"> -->
+          <div class="featText">
+            <!-- <a href="#" class="featShow">Show me more</a> -->
+          </div>
+          <div class="faet_body">
+            <div class="_feat" style="position: relative">
+              <div class="color-overlay" data-color="yellow"></div>
+              <div class="featImg">
+                <img src="assets/images/Meltwater.bin" alt="#" class="" />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">UI/UX Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="#">Graphic Design</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom scroll-animate">
+                  <p>
+                    Marketing Platform UX Overhaul <span class="myfont-kattan">for Meltwater</span>
+                  </p>
+                  <p class="_text">Meltwater</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+          <!-- /col -->
+        <!-- </div> -->
+        <!-- / faet_body-->
+      <!-- ./swiper-slder -->
+    </div>
+    <!--  -->
+    <div class="swiper-slide">
+        <!-- <div class="col-lg-12 col-sm-12"> -->
+          <div class="faet_body">
+            <div class="_feat" style="position: relative">
+              <div class="color-overlay" data-color="blue"></div>
+              <div class="featImg">
+                <img src="assets/images/RDP.bin" alt="#" class="" />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Brand Identity</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom scroll-animate">
+                  <p>Branding for<span class="myfont-kattan"> Financial Services</span></p>
+                  <p class="_text">RDP Advisory</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        <!-- </div> -->
+        <!-- / faet_body-->
+
+      <!-- ./swiper-slide -->
+    </div>
+    <!-- /swiper-wrapper -->
+  </div>
+  <!-- Add Scrollbar -->
+  <div class="swiper-scrollbar"></div>
+<!-- </div> -->
+</div>
+
+
+</section>
+
+    <!-- big_wrapper_section -->
+    <section class="big_wrapper_section">
+      <div class="bacaground_dark"></div>
+      <div class="digital_section">
+        <div class="back_video">
+       <video autoplay="" loop="" muted="" plays-inline="" class="object-cover" src="https://x5ausmalr0axbi2v.public.blob.vercel-storage.com/Homepage/Homepage-Careers_tile-0dar8ZgqKWQv2YEEVhBWnAo4ooRlxZ.mp4">
+                  <!-- <source src="assets/images/video-bg2.mp4" type="video/mp4"> -->
+       </video>
+      </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-12 ">
+            <div class="digital_box_left card-animate ">
+              <div class="bg_box ">
+                <h2 class="title_head">
+                  What we do<span class="myfont-kattan"> and love.</span>
+                </h2>
+                <p class="">
+                  As strategic partners, we build impactful brands, creative
+                  strategies, and seamless experiences that adapt to your
+                  audience's evolving expectations.
+                </p>
+              </div>
+              <!-- /digital_box -->
+               <!-- <div class="_box-animit-top-scroll"> -->
+           <div class="digital_box_left_content card-animate">
+            <div class="box_left">
+              <div class="dgBox" data-image="assets/images/pexels-cottonbro-5483052.jpg">
+                <h2 class="">Brand Identity</h2>
+                <p class="">
+                  Distinctive, cohesive, and impactful brand identity design
+                  that resonates with audiences, strengthens presence, and
+                  embodies your values.
+                </p>
+              </div>
+            </div>
+            <!-- /digital_box -->
+            <div class="box_left">
+              <div class="dgBox" data-image="assets/images/pexels-mart-production-7718663.jpg">
+                <h2 class="">Strategy & Consulting</h2>
+                <p class="">
+                  Insightful, integrated, and innovative strategies that
+                  navigate digital landscapes, optimize online presence, and
+                  drive measurable results.
+                </p>
+              </div>
+            </div>
+           </div>
+              <!-- </div> -->
+              <!-- /digital_box -->
+
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col-lg-6 col-md-12">
+            <div class="digital_box_right  card-animate">
+              <!-- <div class="_box-animit-top-scroll"> -->
+              <div class="box_right">
+                <div class="dgBox" data-image="assets/images/pexels-pixabay-355952.jpg">
+                  <h2 class="">Web Design & Development</h2>
+                  <p class="">
+                    Stunning, SEO optimized web design and website development
+                    that inspire users, enhance business growth, and amplify our
+                    partners' missions.
+                  </p>
+                </div>
+              </div>
+              <!-- /digital_box -->
+              <div class="box_right">
+                <div class="dgBox" data-image="assets/images/pexels-atbo-66986-245240.jpg">
+                  <h2 class="">Digital Marketing</h2>
+                  <p class="">
+                    Strategic and success-driven digital marketing campaigns and
+                    search engine optimization solutions that engage your target
+                    audience, boost brand visibility, and achieve your
+                    objectives.
+                  </p>
+                </div>
+              </div>
+              <!-- </div> -->
+              <!-- /digital_box -->
+              <div class="dgBoxImg card-animate">
+                <img
+                  src="assets/images/Digital-Agency-Services-and-Expertise.bin"
+                  alt="#"
+                />
+              </div>
+              <!-- /dgBoxImg -->
+            </div>
+          </div>
+          <!-- /col -->
+        </div>
+        <!-- </div> -->
+      </div>
+      <!-- /digital_section -->
+      <div class="BgWrapper">
+        <!-- <video autoplay loop muted plays-inline class="back_video bottomZero">
+        <source src="assets/images/video-bg.mp4" type="video/mp4">
+    </video> -->
+
+        <div class="bacaground_dark"></div>
+        <!-- <div class="container-fluid"> -->
+        <div class="back_video">
+          <video
+            autoplay
+            loop
+            muted
+            plays-inline
+            class="object-cover"
+            src="https://x5ausmalr0axbi2v.public.blob.vercel-storage.com/Homepage/BOWEN%20Company%20Video%20Homepage-S5LOEUs6aPaNMsWWz9Td1IgKrDv938.mp4"
+          >
+            <!-- <source src="assets/images/video-bg.mp4" type="video/mp4"> -->
+          </video>
+        </div>
+
+        <!-- ./BgWrapper -->
+        
+<section class="animateScroll20">
+
+<div class="scroller20" data-speed="fast">
+  <ul class="tag-listScroull scroller__inner">
+    <li class="myfont-kattan cWhite">WHAT WE LOVE<i class="fa fa-face-smile"></i></li>
+    <li class="cWhite">EXPERTISE<i class="fa fa-face-smile"></i></li>
+    <li class="myfont-kattan cWhite">WHAT WE LOVE<i class="fa fa-face-smile"></i></li>
+    <li class="cWhite">EXPERTISE<i class="fa fa-face-smile"></i></li>
+    <li class="myfont-kattan cWhite">WHAT WE LOVE<i class="fa fa-face-smile"></i></li>
+    <li class="cWhite">EXPERTISE<i class="fa fa-face-smile"></i></li>
+    <li class="myfont-kattan cWhite">WHAT WE LOVE<i class="fa fa-face-smile"></i></li>
+  </ul>
+</div>
+
+<div class="scroller20" data-direction="right" data-speed="slow">
+  <ul class="tag-listScroull scroller__inner">
+    <li class="cWhite">EXPERTISE <i class="fa fa-face-smile"></i> </li>
+    <li class="myfont-kattan cWhite">WHAT WE LOVE<i class="fa fa-face-smile"></i></li>
+    <li class="cWhite">EXPERTISE<i class="fa fa-face-smile"></i></li>
+    <li class="myfont-kattan cWhite">WHAT WE LOVE<i class="fa fa-face-smile"></i></li>
+    <li class="cWhite">EXPERTISE<i class="fa fa-face-smile"></i></li>
+    <li class="myfont-kattan cWhite">WHAT WE LOVE<i class="fa fa-face-smile"></i></li>
+    <li class="cWhite">EXPERTISE<i class="fa fa-face-smile"></i></li>
+  </ul>
+</div>
+</section>
+
+
+
+        <div class="priceSection">
+          <div class="container-fluid">
+            <h2 class="scroll-float price-title">Two Pricing Models.</h2>
+            <h2 class="myfont-kattan scroll-float approach-title">One Approach.</h2>
+          </div>
+        </div>
+        <!-- priceSection -->
+        <!--  ./carouselBg-->
+      </div>
+      <!-- ./ carouselBg section -->
+    </section>
+    <!--./big_wrapper_section  -->
+
+    <div class="textSection scroll-animate">
+      <div class="container-fluid">
+        <p class="">
+          Based in New York, our web design agency partners with ambitious
+          brands across the U.S. and beyond. We craft strategic websites that
+          tell your story, convert customers, and scale with you over time.
+        </p>
+      </div>
+    </div>
+    <!-- textSection -->
+    <section class="project_section">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- <div class="container"> -->
+          <div class="col-lg-6 col-md-12">
+            <div class="project_body faet_body">
+              <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+              <div class="color-overlay" data-color="red"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/Our-Approach-Agency-Subscription.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Our Approach</a>
+                    </li>
+                    <li>
+                      <a href="#">01/02</a>
+                    </li>
+                  </ul>
+                  <h2 class="ourText">Ongoing Partnerships</h2>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>We've Got<span class="myfont-kattan">You Covered.</span></p>
+                </div>
+              </div>
+              <!--  -->
+              <!-- </div> -->
+            </div>
+          </div>
+          <!-- / faet_body-->
+          <div class="col-lg-6 col-md-12">
+            <div class="project_body faet_body">
+              <div class="color-overlay" data-color="blue"></div>
+              <div class="featImg">
+                <img
+                  src="assets/images/Our-Approach-Project-Based.bin"
+                  alt="#"
+                  class=""
+                />
+              </div>
+              <div class="faet_box">
+                <div class="">
+                  <ul class="faet_content_top">
+                    <li>
+                      <a href="#">Our Approach</a>
+                    </li>
+                    <li>
+                      <a href="#">01/02</a>
+                    </li>
+                  </ul>
+                  <h2 class="ourText">Project-Based</h2>
+                </div>
+                <!--  -->
+                <div class="faet_content_bottom">
+                  <p>The Just-Right<span class="myfont-kattan">Approach.</span></p>
+                </div>
+              </div>
+              <!--  -->
+              <!-- </div> -->
+            </div>
+            <!-- /col -->
+          </div>
+          <!-- / faet_body-->
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
+    <!--  /project_section -->
+
+  <!--  /projectmobilesection -->
+
+    <section class="_textLine">
+      <div class="container-fluid">
+        <!-- <p class=""> -->
+        <ul class="textList">
+          <li>What's better for you?</li>
+          <li class="t1" style="width: fit-content;">
+            <!-- <span> -->
+            <a href="#" class="t2">Explore the comparison</a>
+            <a href="#" class="t3">Explore the comparison</a>
+            <!-- </span> -->
+          </li>
+        </ul>
+
+        <!-- </p> -->
+      </div>
+    </section>
+    <!-- _textLine -->
+    <section class="tenacity_section">
+      <div class="container-fluid">
+        <div class="back_video">
+          <div class="tenBgDark"></div>
+          <video autoplay loop muted plays-inline class="object-cover"
+            src="https://x5ausmalr0axbi2v.public.blob.vercel-storage.com/Homepage/BOWEN%20Company%20Video%20Homepage-S5LOEUs6aPaNMsWWz9Td1IgKrDv938.mp4"
+          ></video>
+        </div>
+        <span class="s1"
+          >Always Evolving <i class="fa-regular fa-face-smile"></i>
+        </span>
+        <div class="scroll-animate">
+          <h2 class="scroll-animate">Our Foundation is Tenacity.</h2>
+          <p class="scroll-animate">
+            As a <a href="#"> New York web design agency,</a> we approach every
+            project with persistence and precision. From discovery to launch, we
+            stay focused on solving complex challenges and delivering digital
+            solutions that work. Our commitment doesn't end at delivery. We're
+            here to help brands grow over time.
+          </p>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+    <!-- ./tenacity_section -->
+    <div class="textMore">
+      <p class="scroll-animate">Learn more <span class="myfont-kattan scroll-animate"> about us</span></p>
+    </div>
+
+    <section class="fastestsMobileSection">
+        <div class="fastestMobileText">
+
+       <h1>America's Fastest-Growing</h1>
+          <p>
+            BOWEN has officially earned a coveted spot on the exclusive Inc.
+            5000, a milestone that reflects our journey from a local Long Island
+            web design agency to a global leader in digital excellence.
+          </p>
+          <!-- <a href="#">Read the Post 1</a> -->
+           <ul class="textList">
+          <li class="t1" style="width: fit-content;">
+            <!-- <span> -->
+            <a href="#" class="t2">Read the Post</a>
+            <a href="#" class="t3">Read the Post</a>
+            <!-- </span> -->
+          </li>
+        </ul>
+           
+        </div>
+
+
+<!-- Swiper -->
+<div class="swiper-fastest">
+         
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="image-section">
+        <img
+          src="assets/images/creativity-cultivated.webp"
+          alt="Description of image"
+        />
+      </div>
+      <!--  -->
+    </div>
+    <div class="swiper-slide">
+      <div class="text-section">
+        
+        <div class="amImg">
+          <img src="assets/images/inc-5000-test.bin" alt="" />
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  </div>
+  <!-- Add Scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+<!-- Swiper -->
+
+</section>
+
+<section class="fastestLGSccrean">
+
+    <div class="fastest">
+      <!-- <div class="container"> -->
+      <div class="image-section">
+        <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="image-parent" style="position: relative">
+              <div class="color-overlay" data-color="red"></div>
+        <img
+          src="assets/images/creativity-cultivated.webp"
+          alt="Description of image"
+        />
+      </div>
+      </div>
+      <div class="text-section">
+        <div class="scroll-animate  ">
+          <h1 class="scroll-animate">America's Fastest-Growing</h1>
+          <p class="scroll-animate">
+            BOWEN has officially earned a coveted spot on the exclusive Inc.
+            5000, a milestone that reflects our journey from a local Long Island
+            web design agency to a global leader in digital excellence.
+          </p>
+          <a href="#" class="scroll-animate">Read the Post</a>
+        </div>
+        <div class="amImg">
+          <div class="white-cursor"><i class="fas fa-arrow-right"></i></div>
+            <div class="image-parent" style="position: relative">
+              <div class="color-overlay" data-color="yellow"></div>
+              <div class="image-child">
+          <img src="assets/images/inc-5000-test.bin" alt="" />
+              </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+
+
+    </section>
+    <!-- ./fastest -->
+    <body>
+
+      <section class="precision_section">
+        <div class="section">
+    
+          <div class="item" data-image="assets/images/pexels-cottonbro-5483052.jpg">
+            <div class="item2">
+              <h2 class="scroll-animate">Precision</h2>
+              <span class="title1D scroll-animate">Craftsmanship</span>
+            </div>
+            <div class="_paragraph scroll-animate">
+              <p>
+                Our dedication to meticulous detail ensures every aspect of our
+                service culminates in seamless, unparalleled experiences.
+              </p>
+            </div>
+          </div>
+    
+          <div class="item" data-image="assets/images/pexels-mart-production-7718663.jpg">
+            <div class="item2">
+              <h2 class="scroll-animate">Uncompromised</h2>
+              <span class="title1D scroll-animate">Quality.</span>
+            </div>
+            <div class="_paragraph scroll-animate">
+              <p>
+                We relentlessly uphold the highest standards, delivering nothing
+                less than unparalleled excellence that reflects the level of work
+                that we're proud to deliver.
+              </p>
+            </div>
+          </div>
+    
+          <div class="item" data-image="assets/images/pexels-pixabay-355952.jpg">
+            <div class="item2">
+              <h2 class="scroll-animate">20+ Years</h2>
+              <span class="title1D scroll-animate">of Experience.</span>
+            </div>
+            <div class="_paragraph scroll-animate">
+              <p>
+                With 20 years in the field, our rich history shapes our expertise,
+                ensuring unmatched acumen and proficiency in every service we
+                provide.
+              </p>
+            </div>
+          </div>
+    
+          <div class="item" data-image="assets/images/pexels-atbo-66986-245240.jpg">
+            <div class="item2">
+              <h2 class="scroll-animate">Client</h2>
+              <span class="title1D scroll-animate">Obsessed.</span>
+            </div>
+            <div class="_paragraph scroll-animate">
+              <p>
+                Every decision is driven by our obsession with client
+                satisfaction, tailoring experiences that exceed expectations at
+                every turn.
+              </p>
+            </div>
+          </div>
+    
+          <div class="item" data-image="assets/images/pexels-cottonbro-5483052.jpg">
+            <div class="item2">
+              <h2 class="scroll-animate">Continuously</h2>
+              <span class="title1D scroll-animate">Adapting.</span>
+            </div>
+            <div class="_paragraph scroll-animate">
+              <p>
+                Our relentless pursuit of innovation means we're always adapting,
+                ensuring we stay ahead of the curve to meet the future head-on.
+              </p>
+            </div>
+          </div>
+    
+        </div>
+      </section>
+    
+      <!-- ✅ عنصر الصورة المتحركة (خارج العناصر - يظهر مرة واحدة بس) -->
+      <div class="precision-section-image-hover" style="display: none;"></div>
+    
+    </body>
+    
+    <!-- عنصر الصورة المتحركة (خارج كل العناصر) -->
+    <div class="precision-section-image-hover" style="display: none;"></div>
+    
+    <section class="heroWrapper_section">
+       <div class="back_video">
+          <div class="tenBgDark"></div>
+          <video autoplay loop muted plays-inline class="object-cover"
+            src="https://x5ausmalr0axbi2v.public.blob.vercel-storage.com/Homepage/BOWEN%20Company%20Video%20Homepage-S5LOEUs6aPaNMsWWz9Td1IgKrDv938.mp4"
+          ></video>
+        </div>
+      <!-- <div class="wrapperbgDark"></div>
+      <div class="back_video">
+       <video autoplay="" loop="" muted="" plays-inline="" class="object-cover" src="https://x5ausmalr0axbi2v.public.blob.vercel-storage.com/Homepage/Homepage-Careers_tile-0dar8ZgqKWQv2YEEVhBWnAo4ooRlxZ.mp4">
+          </video>
+      </div> -->
+      <div class="digital_section">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="colBoxLeft">
+              <div class="webBox">
+                <ul class="webBtn">
+                  <li>
+                    <a href="#">The Latest</a>
+                  </li>
+                  <li>
+                    <a href="#">2025</a>
+                  </li>
+                </ul>
+                <p>
+                  This quarter, we're reimagining the digital presence of a
+                  national media brand, launching a new site for a regional
+                  bank, and leading a full rebrand and website for a
+                  <a href="#"> commercial real estate</a> firm.
+                </p>
+              </div>
+              <!-- /digital_box -->
+              <div class="gBoxLeft">
+                <div class="dgBox">
+                  <ul class="ul1">
+                    <li>A</li>
+                    <li>Glimpse</li>
+                    <li>of</li>
+                  </ul>
+                  <p class="myfont-kattan">Q2<span> 2025</span></p>
+                </div>
+              </div>
+              <!-- /digital_box -->
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col-lg-6 col-md-12">
+            <div class="colBoxRight">
+              <!-- /digital_box -->
+              <div class="_dgBoxImg">
+                <!-- <img
+                  src="assets/images/Digital-Agency-Services-and-Expertise.bin"
+                  alt="#"
+                /> -->
+                <div class="svgImg">
+                  <svg width="750" height="800" viewBox="0 0 750 800" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-1/2 left-1/2 h-[calc(100%-80px)] w-[calc(100%-80px)] -translate-x-1/2 -translate-y-1/2 lt:h-[calc(100%-40px)] lt:w-[calc(100%-40px)]"><g clip-path="url(#clip0_4144_12863)"><path d="M482.95 198.27C480.06 193.77 476.71 189.88 473 186.47C473.68 185.78 474.32 185 474.89 184.1C478.99 177.68 478.75 169.41 475.11 162.88C480.42 156.23 481.24 147.23 476.93 139.62C476.37 138.63 475.74 137.71 475.06 136.85C475.81 134.66 475.99 132.18 475.4 129.54C475.29 129.05 475.16 128.57 475.02 128.1C475.51 127.25 475.91 126.35 476.17 125.41C478.09 118.42 473.79 112.39 467.44 110.03C448.97 103.2 431.36 94.3604 414.65 83.9604C404.97 77.9304 395.87 86.9504 396.17 95.7604C391.78 100.17 390.8 107.84 395.78 113.55C396.53 114.41 397.32 115.2 398.13 115.97C396.5 117.15 395.16 118.72 394.24 120.8C391.92 126.05 392.41 131.15 395.45 134.85C392.87 138.18 391.56 142.5 392.13 147.12C392.66 151.44 394.52 154.81 397.19 157.49C393.96 162.28 393.04 168.41 395.56 174.09C395.77 174.56 396 175.01 396.24 175.45C395.88 176.15 395.58 176.88 395.38 177.63C393.47 184.59 397.75 190.68 404.11 193.01C425.69 200.89 447.26 208.76 468.84 216.64C479.08 220.38 488.63 207.11 482.96 198.28L482.95 198.27Z" fill="url(#paint0_linear_4144_12863)" class="svg-elem-1" stroke-dasharray="0 1" opacity="1"></path><path d="M367.47 372.619C365.87 370.719 364.19 368.909 362.47 367.179C363.84 365.859 365.06 364.249 366.07 362.289C370.4 353.849 370.81 342.319 370.33 333.019C369.87 324.139 368.1 315.399 365.16 307.089C366.73 302.379 365.23 296.279 360.42 293.909C359.91 293.659 359.39 293.419 358.88 293.169C358.74 292.919 358.59 292.689 358.45 292.439C358.48 292.299 358.52 292.149 358.55 292.009C368.21 291.619 373.78 278.149 364.98 272.139C368.86 267.259 369.1 259.459 362.24 255.839C334.87 241.369 307.49 226.899 280.11 212.429C276.17 210.349 271.41 210.459 267.84 213.289C264.06 216.299 263.22 220.279 263.88 224.899C264.19 227.039 264.46 229.189 264.73 231.339C261.6 234.409 260.58 239.079 261.24 243.779C261.59 246.279 261.91 248.779 262.22 251.279C260.77 252.599 259.65 254.309 259.1 256.339C258.41 258.839 258.62 261.149 259.47 263.169C257.07 264.499 255.17 266.709 254.36 269.669C253.04 274.479 255.45 280.319 260 282.539C258.11 286.009 257.87 290.599 259.58 294.119C259.12 299.939 258.91 305.779 259 311.619C259.1 318.339 259.12 325.859 260.96 332.189C259.21 336.189 259.52 340.899 262.12 344.139C260.46 350.339 264.28 355.509 269.85 357.649C298.81 368.789 327.77 379.939 356.73 391.079C361.23 392.809 366.91 389.919 369.2 385.999C371.81 381.529 370.67 376.389 367.47 372.609V372.619Z" fill="url(#paint1_linear_4144_12863)" class="svg-elem-2" opacity="1"></path><path d="M448.36 494.94C446.22 487.36 438.38 484.47 431.89 481.55C419.18 475.83 406.04 471.32 392.45 468.24C389.32 467.53 386.08 468.42 383.89 470.52C381.71 471.71 379.95 473.77 379.33 476.05C378.64 478.56 379.08 480.89 380.27 482.79C379.88 483.76 379.66 484.86 379.63 486.07C379.4 497.47 390.29 502.44 398.83 507.08L427.38 522.59C429.55 523.77 432.04 523.94 434.28 523.32C435.32 523.89 436.41 524.4 437.56 524.85C443.09 526.99 448.69 521.58 448.76 516.31C448.81 512.55 448.86 508.8 448.91 505.04C448.96 501.72 449.27 498.18 448.35 494.93L448.36 494.94Z" fill="url(#paint2_linear_4144_12863)" class="svg-elem-3" opacity="1"></path><path d="M280.443 610.091C272.984 605.828 227.861 576.103 213.446 569.727C207.009 566.881 199.724 572.846 203.462 579.744C203.882 580.522 204.338 581.281 204.775 582.05C200.581 582.471 196.998 586.606 197.846 590.677C192.184 589.277 185.473 594.575 189.111 600.64C187.151 599.442 185.227 598.179 183.34 596.862C177.842 593.001 171.687 599.085 172.517 604.574C170.639 603.476 168.77 602.378 166.891 601.281C158.768 596.523 151.41 609.176 159.524 613.924C182.428 627.327 205.331 640.721 228.235 654.124C234.098 657.555 242.805 650.217 238.219 644.106C238.073 643.914 237.927 643.731 237.781 643.539C242.012 643.045 245.923 639.019 244.729 634.866C246.525 635.68 248.312 636.494 250.108 637.308C256.29 640.117 263.73 633.585 260.639 627.903C260.794 627.977 260.949 628.05 261.104 628.123C265.727 630.355 271.99 626.998 272.355 622.314L273.075 622.725C281.245 627.391 288.612 614.748 280.443 610.082V610.091Z" fill="url(#paint4_linear_4144_12863)" class="svg-elem-5" opacity="1"></path><path d="M693.51 258.07C693.44 257.71 693.4 257.39 693.37 257.2C693.34 256.24 693.32 255.28 693.35 254.31C693.43 251.18 693.86 248.05 694.26 244.95C695.19 237.83 688.84 230.55 682.89 228.04C682.29 227.79 681.69 227.58 681.1 227.4C681.48 226.82 681.87 226.24 682.25 225.65C686.49 219.01 685.2 208.59 679.36 203.23C673.08 197.46 664.51 196.4 656.94 200.34C654.73 201.49 652.57 202.7 650.43 203.94C648.15 201.12 645.09 198.98 641.4 198.14C640.72 197.99 640.06 197.88 639.39 197.79C638.52 195.75 637.25 193.86 635.49 192.25C627.82 185.2 616.99 185.29 609.33 192.25C604.29 196.84 599.24 201.42 594.2 206.01C593.4 203.16 591.88 200.5 589.56 198.37C582.32 191.73 570.53 190.88 563.4 198.37C544.55 218.16 533.79 243.49 532.03 270.68C531.56 277.95 537.07 284.91 543.4 287.59C548.4 289.7 553.68 289.44 558.32 287.28C556.95 293.04 555.83 298.86 554.98 304.74C553.88 312.36 555.14 319.18 561.61 324.19C562.86 325.16 564.26 325.95 565.75 326.58C565.2 329.59 564.71 332.61 564.32 335.66C562.51 349.57 581.38 358.76 592.16 351.63C593.94 350.45 595.72 349.25 597.49 348.05C595.89 352.73 594.21 357.38 592.46 362.01C590.94 364.95 589.71 368.06 588.85 371.32C586.4 380.67 591.95 391.84 601.77 394.08C604.13 394.62 606.37 394.74 608.47 394.53C609 394.83 609.54 395.1 610.08 395.33C619.16 399.16 627.59 395.26 633.18 387.76C633.22 387.7 634.8 385.6 635.16 385.11C635.69 384.43 636.23 383.75 636.77 383.07C638.8 380.53 640.86 378.02 642.97 375.54C646.99 370.81 651.15 366.21 655.45 361.73C659.42 357.59 663.53 353.59 667.73 349.69C669.55 350.55 671.44 351.14 673.23 351.38C679.85 352.27 688.74 349.2 691.66 342.55C692.63 340.34 693.7 338.22 694.99 336.18C695.08 336.04 695.53 335.41 695.87 334.92C696.47 334.27 697.57 333.01 697.55 333.03C706.91 323.11 702.32 307.76 691.73 302.91C695.94 297 700.14 291.08 704.37 285.2C710.9 276.13 704.54 260.12 693.51 258.06V258.07Z" fill="url(#paint3_linear_4144_12863)" class="svg-elem-4" opacity="1"></path><path d="M 1 -2 C 1 -2 139.92 17.17 177.16 103.01 C 203.12 162.79 151.23 179.81 139.94 123.34 C 127.69 62.08 183.68 24.29 218.86 47.82 C 253.68 71.1 248.02 106.91 249.66 152.08 C 249.84 156.93 319.19 185.96 319.19 185.96 C 319.19 185.96 318.7 60.59 319.19 54.89 C 320.22 42.84 330.38 49.24 330.21 59.78 C 330.04 70.32 329.94 105.07 330.21 108.41 C 330.48 111.75 355.83 125.32 362.87 125.82 C 369.91 126.32 334.93 121.18 330.21 123.94 C 325.49 126.7 354.7 139.7 362.87 140.85 C 371.04 142 336.02 133.69 330.19 138.1 C 324.36 142.51 354.32 153.24 362.87 153.9 C 371.42 154.56 338.31 147.63 330.21 152.02 C 321.16 156.92 378.29 173.96 378.29 173.96 L 378.29 70.58 C 378.29 57.7 390.97 60.35 390.97 70.13 L 390.97 188.87 C 390.97 192.71 393.16 196.22 396.61 197.9 C 396.61 197.9 465.77 231.46 475.91 236.55 C 486.05 241.64 487.58 235.23 487.53 229.23 C 487.26 194.46 487.22 109.26 487.64 93.54 C 488.06 77.82 505.54 83.43 505.54 97.3 C 505.54 116.56 505.11 327.73 505.54 335.79 C 505.82 340.94 486.5 334.3 486.5 326.51 C 486.5 318.72 490.45 272.84 485.01 260.33 C 477.58 243.24 453.02 268.68 462.42 304.11 C 470.4 334.19 471.22 276.36 458.78 249.52 C 448.41 227.14 426.94 260.07 436.12 294.9 C 442.41 318.77 443.55 262.67 431.62 237 C 422.72 217.84 402.19 256.74 408.5 284.96 C 412.93 304.74 420.55 260 407.01 228.8 C 398.51 209.21 378.48 258.02 382.73 275.93 C 385.56 287.86 383.14 260.61 382.85 246.7 C 382.78 243.36 380.85 240.35 377.85 238.89 C 377.85 238.89 249.67 171.61 249.67 176.42 C 249.67 181.23 249.51 354.45 249.67 360.3 C 249.83 366.15 455.61 460.66 455.61 460.66 L 455.61 328.76 C 449.72 326.67 382.74 293.25 382.74 293.25 C 382.74 293.25 382.31 439.33 382.74 448.1 C 383.01 453.68 455.61 482.62 455.61 482.62 C 455.61 482.62 455.68 530.41 455.61 537.18 C 455.57 540.65 369.73 503.38 369.53 499.21 C 369.12 490.69 369.53 441.67 369.53 441.67 L 360.82 437.42 L 360.82 490.09 C 360.82 490.09 292.37 440.7 245.17 433.73 C 220.07 430.02 357.35 457.57 341.03 454.1 C 324.71 450.63 276.56 412.84 245.17 407.35 C 223.37 403.54 361.45 432.02 341.03 427.69 C 320.61 423.36 237.89 377.43 237.89 377.43 C 237.89 377.43 239.13 230.88 237.89 222.66 C 236.65 214.44 220 225.5 220 240.23 L 220 444.77 L 488.48 575.61 L 488.48 523.13 L 472.34 515.2 L 472.34 507.12 C 472.34 504.97 474.03 503.63 476.14 504.99 C 478.25 506.35 479.9 509.78 479.9 511.71 L 479.9 518.16 L 479.9 512.43 C 479.9 509.21 482.01 507.93 484.08 509.12 C 485.83 510.12 488.48 513.38 488.48 516.96 L 488.48 521.19 L 488.48 496.23 C 488.48 496.23 487.95 506.17 480.66 501.47 C 473.37 496.77 472.34 490.75 472.34 487.42 C 472.34 484.09 473.88 480.28 480.39 484.48 C 486.9 488.68 488.49 492.65 488.49 494.44 L 472.35 473.57 L 488.49 476.95 L 472.35 461.26 L 488.49 464.35 L 472.35 449.1 L 472.35 430.21 L 480.4 447.85 L 480.4 435.4 L 488.5 451.51 L 488.5 430.92 L 472.36 422.99 L 488.5 417.97 L 472.36 410.04 L 472.36 336.91 L 493.42 347.17 C 505.81 354.55 507.56 358.9 507.56 377.49 C 507.56 396.08 507.46 569.21 507.56 579.04 C 507.7 592.59 506.29 597.67 499.1 602.78 C 494.43 606.1 469.76 622.12 458.49 628.61 C 442.83 637.62 397.34 664.83 380.56 675.35 C 361.23 687.48 342.53 699.6 330.87 704.37 C 320.59 708.58 314.2 706.49 299.64 700.05 C 286.79 694.37 187.75 643.98 167.04 633.06 C 146.33 622.14 48.44 569.81 41.2 564.64 C 33.96 559.47 36.48 553.97 42.02 550.74 C 42.02 550.74 54.99 542.73 62.04 538.6 C 69.09 534.47 206.28 454.68 212.52 457.72 C 218.76 460.76 497.76 595.69 504.73 599.09 C 511.7 602.49 509.38 609.82 504.3 613.16 C 498.13 617.21 476.18 631.32 460.88 640.19 C 442.15 651.05 406.67 672.59 382.81 687.59 C 369.08 696.22 343.78 714.43 330.83 718.22 C 322.12 720.77 311.41 717.61 303.91 714.02 C 289.25 707 214.08 668.84 181.33 651.52 C 148.58 634.2 45.8 578.86 40.11 575.28 C 32.54 570.52 38.3 565.86 42.39 563.67 C 42.39 563.67 55.5 555.61 63.44 550.97 C 71.38 546.33 204.11 469.38 209.99 472.25 C 215.87 475.12 473.21 600.53 473.21 600.53 C 473.21 600.53 406.15 644.16 398.06 641.26 C 389.97 638.36 157.32 519.43 150.35 516.07 C 143.38 512.71 129.76 520.9 135.87 523.97 C 141.98 527.04 204.64 557.53 204.64 557.53 C 204.64 557.53 128.07 594.87 133.54 596.32 C 139.01 597.77 223.38 643.58 223.38 643.58 L 292.05 603.77 C 424.31 666.25 431.31 707.25 486.77 740 C 540.6 771.79 554.99 643.43 523.08 641.74 C 485 639.72 525.06 755.97 582.94 755.97 C 609.29 755.97 620.9 737.59 623.01 723.34 C 626.15 702.17 617.67 681.27 607.51 668.85 C 597.35 656.43 577.59 637.23 577.02 624.24 C 576.45 611.25 591.2 586.04 594.59 565.71 C 597.98 545.38 623.89 552.52 631.23 551.95 C 638.57 551.38 657.31 549.69 667.42 544.04 C 667.42 544.04 679.47 556.67 666.43 573.61 C 653.39 590.56 631.16 584.48 631.16 584.48 C 632.93 601.06 628.27 610.12 628.27 610.12 C 628.27 610.12 677.1 616.44 671.4 666.7 C 671.4 666.7 680.17 648.89 702.01 648.89 C 723.85 648.89 754.72 683.52 735.52 755.43 C 735.52 755.43 729.87 731.71 732.13 712.89 C 734.39 694.07 745.68 659.06 747.19 647.01 C 748.69 634.96 755 584.72 732.88 574.35 C 720.84 568.7 712.49 575.82 708.25 586.98 C 704.01 598.14 687.45 626.99 700.34 638.13 C 711.05 647.38 721.12 628.48 732.96 605.38 C 737.34 596.83 744.46 577.64 712.55 567.19 C 712.55 567.19 714.88 553.28 701.04 547.63 C 687.2 541.98 678.66 550.81 677.25 568.32 C 675.84 585.82 667.73 613.61 666.32 620.95 C 664.91 628.29 663.99 643.72 681.78 640.05 C 699.56 636.38 711.2 583.04 706.68 568.08 C 702.16 553.11 693.71 550.62 682.63 550.06 C 682.63 550.06 678.81 527.93 663.56 524.82 C 648.31 521.72 642.68 541.23 641.83 564.1 C 640.98 586.97 634.39 608.61 640.88 619.06 C 647.38 629.5 660.29 630.88 668.48 604.34 C 676.66 577.8 683.18 552.14 668.78 536.89 C 654.38 521.64 636.31 545.72 636.31 545.72 C 636.31 545.72 634.05 523.13 634.05 514.66 C 634.05 506.19 634.61 468.35 634.05 455.93 C 633.49 443.51 628.22 426.57 614.29 432.78 C 601.53 438.48 602.63 463.03 602.07 477.71 C 601.51 492.39 599.34 543.05 592.61 551.87 C 576.24 573.33 550.82 554.14 553.7 502.74 C 555.05 478.52 564.22 447.99 596.47 426.05 C 631.34 402.33 641.03 412.64 637.46 419.73 C 634.26 426.08 614.48 429.2 607.17 416.91 C 598.18 401.81 618.52 388.82 633.44 388.87 C 645.03 388.91 641.07 400 629.06 404.29 C 617.04 408.58 600.51 413.01 597.52 404.26 C 595.32 397.84 605.57 388.58 617.22 384.29 C 630.94 379.24 644.68 381.56 644.68 381.56 C 644.68 381.56 644.68 374.08 644.68 358.63 C 644.68 343.18 668.24 318.68 682.66 289.18 C 697.59 258.64 682.16 203.44 619.35 203.44 C 556.54 203.44 547.57 262.12 562.5 292.66 C 576.92 322.16 596.01 344.17 596.01 359.62 L 596.01 388.66 C 596.01 388.66 603.98 377.16 619.35 372.53 C 619.35 372.53 611.55 321.89 624.42 306.96 C 637.29 292.03 654.39 269.68 650.33 253.42 C 646.04 236.26 625.61 234.71 619.34 253.42 C 615 266.36 620.26 275.87 624.58 273.16 C 631.96 268.53 620.22 234.96 600.73 240.04 C 584.77 244.2 588.89 264.75 600.73 277.62 C 612.58 290.49 614.12 297.7 614.12 303.36" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-elem-6" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="1px 1px"></path></g><defs><linearGradient id="paint0_linear_4144_12863" x1="438.326" y1="82.002" x2="438.326" y2="217.289" gradientUnits="userSpaceOnUse"><stop stop-color="#C2EB6D"></stop><stop offset="1" stop-color="#28CFB1"></stop></linearGradient><linearGradient id="paint1_linear_4144_12863" x1="312.322" y1="211" x2="312.322" y2="391.592" gradientUnits="userSpaceOnUse"><stop stop-color="#3BCBEB"></stop><stop offset="1" stop-color="#3D3AE4"></stop></linearGradient><linearGradient id="paint2_linear_4144_12863" x1="414.001" y1="467.999" x2="414.001" y2="525.329" gradientUnits="userSpaceOnUse"><stop stop-color="#F0B55C"></stop><stop offset="1" stop-color="#EA7258"></stop></linearGradient><linearGradient id="paint3_linear_4144_12863" x1="619.503" y1="186.996" x2="619.503" y2="396.823" gradientUnits="userSpaceOnUse"><stop stop-color="#ED5DB3"></stop><stop offset="1" stop-color="#EA4D4D"></stop></linearGradient><linearGradient id="paint4_linear_4144_12863" x1="220" y1="569" x2="220" y2="655" gradientUnits="userSpaceOnUse"><stop stop-color="#5081F5"></stop><stop offset="1" stop-color="#863AE4"></stop></linearGradient><clipPath id="clip0_4144_12863"><rect width="750" height="800" fill="white" class="svg-elem-7"></rect></clipPath></defs></svg>
+                </div>
+              </div>
+              
+              <div class="Boxved">
+                <!-- <div class="faet_body"> -->
+                  <!-- <div class="white-cursor"><i class="fas fa-arrow-right"></i></div> -->
+                  <!-- <div class="" style="position: relative"> -->
+                    <!-- <div class="color-overlay" data-color="red"></div> -->
+                    <!-- <div class="featImg"> -->
+                      <video
+                        autoplay
+                        loop
+                        muted
+                        plays-inline
+                        class="object-cover"
+                        src="https://x5ausmalr0axbi2v.public.blob.vercel-storage.com/Homepage/Homepage-Careers_tile-0dar8ZgqKWQv2YEEVhBWnAo4ooRlxZ.mp4"
+                      >
+                        <!-- <source src="assets/images/video-bg2.mp4" type="video/mp4"> -->
+                      </video>
+                      <!--  -->
+                      <div class="text-love ">
+                        <p>Careers At Bowen</p>
+                        <p class="_textLove">Love <span class="myfont-kattan">What You Do</span></p>
+                      </div>
+                <!-- </div> -->
+              </div>
+              <!-- /dgBoxImg -->
+            </div>
+          </div>
+          <!-- /col -->
+        </div>
+        <!-- </div> -->
+      </div>
+      <!-- /digital_section -->
+    </section>
+    <!--./big_wrapper_section  -->
+    <footer class="footer" id="footer">
+      <!--  -->
+      <div class="footerBg"></div>
+      <div class="footerItemTop">
+        <span>ARE YOU READY?</span>
+        <div class="footerAnimitionText">
+
+          <ul class="footerAnimitionTextlist">
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover1 dis-block" >let's</span>
+                      <span href="#" class="footerAnimitionHidd dis-block">let's</span>
+                    </li>
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover2 dis-block">do</span>
+                      <span href="#" class="footerAnimitionHidd2 dis-block">do</span>
+                    </li>
+                    <li class="">
+                      <span href="#" class="footerAnimitionHover3 dis-block">This</span>
+                      <span href="#" class="footerAnimitionHidd3 dis-block">This</span>
+                    </li>
+                  </ul>
+
+      </div>
+      </div>
+      <!--  ./footerItemTop -->
+         <dev class="">
+      <div class="footerItemCenter">
+        <ul class="footerItemMenu">
+          <li><a href="#">BOWEN® builds websites that scale.</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <div class="footerTimer">
+          <div class="timer">
+            <span id="dateTime"></span>
+            <p id="greeting"></p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="demo-container">
+          <div class="progress-bar">
+            <div class="progress-bar-value"></div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!-- footerItemCenter -->
+
+      <div class="footerItemBottom">
+        <ul class="footerMenuBottom">
+           <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li>BOWEN® © MMXXV</li>
+        </ul>
+<div class="dropdownfooterToggel">
+  <div id="toggleGBT">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </div>
+
+<div id="menuGBT">
+
+          <!--  -->
+          <div class="dropdownF"  id="fatherItim">
+
+
+            <!-- <div class="container"> -->
+                <div class="ppf">
+                   <ul class="fourBtn">
+                    <li class="_fli">
+                      <a href="#" class="fhow">Some Industries We Serve</a>
+                      <a href="#" class="fhidd">Some Industries We Serve</a>
+                    </li>
+                    <li class="_fli">
+                      <a href="#" class="fhow">Some Markets We Serve</a>
+                      <a href="#" class="fhidd">Some Markets We Serve</a>
+                    </li>
+                  </ul>
+                   <ul class="fItemBtn">
+                    <li class="_fli">
+                      <a href="#" class="fhow">Financial Services</a>
+                      <a href="#" class="fhidd">Financial Services</a>
+                    </li>
+                    <li class="_fli">
+                      <a href="#" class="fhow">Banking</a>
+                      <a href="#" class="fhidd">Banking</a>
+                    </li>
+                      <li class="_fli">
+                      <a href="#" class="fhow">Commercial Real Estate</a>
+                      <a href="#" class="fhidd">Commercial Real Estate</a>
+                    </li>
+                      <li class="_fli">
+                      <a href="#" class="fhow">Franchise</a>
+                      <a href="#" class="fhidd">Franchise</a>
+                    </li>
+                  </ul>
+
+                </div>
+
+              <!-- close my dropdown -->
+
+            <!-- </div> -->
+          </div>
+
+  <!--  -->
+</div>
+<!--  -->
+</div>
+  
+        <!--  -->
+      </div>
+      <!-- footerItemBottom -->
+       </dev>
+      <!-- footerItemBottom -->
+      <!-- </div> -->
+      <div id="footer-fluid-canvas-container" style="position: absolute; left:0; top:0; width:100%; height:100%; pointer-events:none; z-index:1;">
+        <canvas id="animationCanvas" style="width:100%;height:100%;display:block;"></canvas>
+      </div>
+    </footer>
+
+    <!-- ./ -->
+     
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/footerAnimation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+
+    <!-- Fluid Splash Effect for Footer Only -->
+    <script>
+    (function() {
+      const canvas = document.getElementById('footer-fluid-canvas');
+      const container = document.getElementById('footer-fluid-canvas-container');
+      if (!canvas || !container) return;
+
+      // Resize canvas to fit container
+      function resizeCanvas() {
+        canvas.width = container.offsetWidth;
+        canvas.height = container.offsetHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      // Simple splash effect (for demo, not full fluid sim)
+      let ctx = canvas.getContext('2d');
+      let splashes = [];
+
+      function addSplash(x, y) {
+        splashes.push({x, y, r: 0, alpha: 1});
+      }
+
+      // Listen only on footer
+      container.parentElement.addEventListener('mousemove', function(e) {
+        const rect = container.getBoundingClientRect();
+        if (e.clientY >= rect.top && e.clientY <= rect.bottom) {
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          addSplash(x, y);
+        }
+      });
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        splashes.forEach(splash => {
+          ctx.beginPath();
+          ctx.arc(splash.x, splash.y, splash.r, 0, 2 * Math.PI);
+          ctx.strokeStyle = `rgba(100,200,255,${splash.alpha})`;
+          ctx.lineWidth = 2 + 6 * splash.alpha;
+          ctx.stroke();
+          splash.r += 2;
+          splash.alpha *= 0.94;
+        });
+        // Remove faded splashes
+        splashes = splashes.filter(s => s.alpha > 0.05);
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+    </script>
+
+   
+  </body>
+</html>

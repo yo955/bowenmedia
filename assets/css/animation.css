@@ -1,0 +1,295 @@
+/* New File css here */
+.parallax {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .scroller {
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+    will-change: transform;
+  }
+  .scroller span {
+    flex-shrink: 0;
+  }
+  @media (min-width: 768px) {
+    .scroller {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+  }
+  
+  .digital_section-image-hover {
+    position: fixed;
+    left: 50%;
+    top: 10vh;
+    transform: translateX(-50%);
+    z-index: 1000;
+    pointer-events: none;
+    width: 420px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.35s cubic-bezier(.4,0,.2,1), transform 0.35s cubic-bezier(.4,0,.2,1);
+    filter: drop-shadow(0 8px 32px rgba(0,0,0,0.18));
+  }
+  .digital_section-image-hover.show {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.04);
+  }
+  .digital_section-image-hover img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    background: #fff;
+  }
+  .precision-section-image-hover {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: scale(0);
+    z-index: 1000;
+    pointer-events: none;
+    width: 200px;
+    height: 150px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .precision-section-image-hover.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .precision-section-image-hover img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* Footer Let's do this hover animation */
+  .footerItemTop h1 {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  .footerItemTop h1 span {
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: center;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  .footerItemTop h1:hover span {
+    animation: charFloat 0.6s ease-in-out;
+  }
+  
+  .footerItemTop h1:hover span:nth-child(1) { animation-delay: 0s; }
+  .footerItemTop h1:hover span:nth-child(2) { animation-delay: 0.05s; }
+  .footerItemTop h1:hover span:nth-child(3) { animation-delay: 0.1s; }
+  .footerItemTop h1:hover span:nth-child(4) { animation-delay: 0.15s; }
+  .footerItemTop h1:hover span:nth-child(5) { animation-delay: 0.2s; }
+  .footerItemTop h1:hover span:nth-child(6) { animation-delay: 0.25s; }
+  .footerItemTop h1:hover span:nth-child(7) { animation-delay: 0.3s; }
+  .footerItemTop h1:hover span:nth-child(8) { animation-delay: 0.35s; }
+  .footerItemTop h1:hover span:nth-child(9) { animation-delay: 0.4s; }
+  .footerItemTop h1:hover span:nth-child(10) { animation-delay: 0.45s; }
+  .footerItemTop h1:hover span:nth-child(11) { animation-delay: 0.5s; }
+  
+  @keyframes charFloat {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(5deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+  
+/* GSAP Card Animation Styles */
+.card-animate {
+  opacity: 0;
+  transform: translateY(100px);
+  will-change: transform, opacity;
+}
+
+/* تحسين الانيميشن للكاردات */
+.digital_box_left.card-animate,
+.digital_box_right.card-animate,
+.dgBoxImg.card-animate {
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* تحسين الانيميشن للكاردات الفردية */
+.dgBox {
+  will-change: transform, opacity, scale;
+}
+
+/* تحسين الانيميشن للنصوص */
+.dgBox h2,
+.dgBox p,
+.bg_box h2,
+.bg_box p {
+  will-change: transform, opacity;
+}
+
+/* إضافة تأثير hover للكاردات */
+.dgBox:hover {
+  /* transform: translateY(-5px); */
+  transition: transform 0.3s ease;
+}
+
+/* Animation for words */
+.word {
+  display: inline-block;
+  will-change: opacity, transform;
+  font-size: 6rem;
+  color: #fff;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* تحسين انيميشن الكلمات */
+.price-title .word,
+.approach-title .word {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.1em;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+
+
+
+/* am */
+   --tw-leading: 140%;
+  --tw-tracking: -.04em;
+  letter-spacing: -.04em;
+      /* font-size: 136px; */
+    line-height: 140%;
+    --tw-font-weight: 700;
+    font-weight: 700;
+
+
+
+}
+
+/* تحسين تأثير الدوران */
+.word {
+  display: inline-block;
+  will-change: opacity, transform;
+  font-size: 7rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* textSection style */
+.priceSection {
+  /* background-color: rgba(255, 0, 0, 0.485); */
+  text-align: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  overflow-x: hidden;
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+}
+.price-title, .approach-title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+}
+.price-title .word, .approach-title .word {
+  display: inline-block;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  font-size: 7vw;
+  color: #fff;
+  margin: 0 0.1em;
+  transition: none;
+  will-change: transform, opacity;
+}
+.approach-title .word{
+  font-weight: 400;
+      font-family: "myfont-kattan";
+}
+.priceSection p {
+  /* font-size: 5em; */
+  color: #fff;
+  /* --tw-tracking: -.04em; */
+  letter-spacing: -0.04em;
+  font-size: 89px;
+  line-height: 140%;
+}
+._two {
+  font-weight: 800;
+}
+
+/* textSection style */
+.textSection {
+  text-align: center;
+  padding: 3em 0;
+  font-size: 20px;
+}
+.textSection p {
+  font-size: 24px;
+  /* letter-spacing: -0.4em; */
+  line-height: 150%;
+  font-weight: 700;
+  width: 64%;
+  margin: auto;
+  color: #000;
+}
+
+/*  */
+/*  */
+/*  */
+/* project_section style */
+
+.animate-black {
+  position: relative;
+  z-index: 10;
+  transition: background 0.3s;
+}
+.min-h-screen.hiddenLGScrean {
+  position: relative;
+  z-index: 20;
+  will-change: transform;
+}
+.team-video {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
