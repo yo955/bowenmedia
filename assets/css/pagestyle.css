@@ -279,9 +279,7 @@ object-fit: cover;
 
 
 }
-.over-h{
-    overflow: hidden;
-}
+
 /*  */
 .title3 {
     /* font-family: var(--inter-font); */
@@ -420,9 +418,9 @@ object-fit: cover;
     /* border: 2px solid red; */
     overflow: hidden;
 }
-/* .wrapperVfullscreen{
-
-} */
+._animateWrapper{
+background: rgb(0 0 0 / 72%);
+}
 #v0 {
 
     top: 50%;
@@ -702,7 +700,7 @@ font-size: 45px;
      /* display: flex;
     justify-content: center;
     align-items: center; */
-    min-height: 600px;
+    /* min-height: 600px; */
     width: 100%;
     margin: auto;
     position: relative;
@@ -744,14 +742,56 @@ font-size: 45px;
     height: 100%;
 }
 ._LogoImg1{
-    /* animation-delay: .2s; */
- /* transform: translateY(-100%); بدء من الأعلى */
-            /* animation: slideIn 0.5s forwards, fadeOut 1s 5s forwards, slideInFromBottom 0.5s 6s forwards; التحريك */
+        /* animation-delay: .2s; */
+         -webkit-animation-iteration-count: 10;
+          animation-iteration-count: 10;
+
+
+          -webkit-animation-duration: 5s !important;
+           animation-duration: 5s !important;
+
+          -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+
+   animation: roll .5s ease-in linear infinite 0s;
 }
 ._LogoImg2{
-    animation-delay: .4s
+    animation-delay: .4s;
+    animation: roll2 5s linear infinite 1s;
 }
   
+/* @keyframes roll {
+  0% {
+
+    transform: none;
+  }
+  3% {
+
+    transform: translateY(-10%) 
+
+  }
+  5% {
+
+    transform: translateY(-10%) 
+
+  }
+  50% {
+        transform: translateY(-10%) 
+  }
+  27% {
+    transform: translateY(-10%) 
+
+  }
+  100% {
+    transform: translateY(-100%) 
+  }
+} */
+
+
+
+
+
+
 @media(width: 929px){
 .hiddenLGScrean{
     /* display: none; */

@@ -292,4 +292,11 @@
   transform: translateY(80px);
   transition: opacity 0.5s, transform 0.5s;
 }
+/* @media (max-width: 991px) {
+  .swiper-mobile-section  {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+} */
 

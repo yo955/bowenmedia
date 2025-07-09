@@ -1249,8 +1249,6 @@ window.addEventListener("scroll", function () {
   navLogo.style.color = colors[colorIndex];
 });
 
-
-
 ////////////////////////////////////////
 
 // ///////////////////////////////////
@@ -1287,9 +1285,6 @@ function addAnimation() {
 //
 // AOS.init(); animate
 
-
-
-
 // Pin Section and videos section
 document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
@@ -1297,36 +1292,57 @@ document.addEventListener("DOMContentLoaded", function () {
   // تأكد من وجود العناصر
   const pinSection = document.querySelector(".animate-black");
   const videosSection = document.querySelector(".min-h-screen.hiddenLGScrean");
+  const swiperMobileSection = document.querySelector(".swiper-mobile-section");
 
-  if (pinSection && videosSection) {
+  if (pinSection || swiperMobileSection || videosSection) {
     // Pin the animateScroll20 section and change background to black
     ScrollTrigger.create({
       trigger: pinSection,
       start: "top top",
-      end: () => "+=" + videosSection.offsetHeight,
+      end: () => "+=" + videosSection.offsetHeight || swiperMobileSection.offsetHeight,
       pin: true,
       pinSpacing: false,
       scrub: true,
       onEnter: () => {
         pinSection.style.background = "#111";
         pinSection.style.zIndex = "10";
+        swiperMobileSection.style.display = "none";
+        swiperMobileSection.style.zIndex = "0";
       },
       onLeave: () => {
         pinSection.style.background = "";
         pinSection.style.zIndex = "";
+        swiperMobileSection.style.display = "block";
+        swiperMobileSection.style.zIndex = "10";
       },
       onEnterBack: () => {
         pinSection.style.background = "#111";
         pinSection.style.zIndex = "10";
+        swiperMobileSection.style.display = "none";
+        swiperMobileSection.style.zIndex = "0";
       },
       onLeaveBack: () => {
         pinSection.style.background = "";
         pinSection.style.zIndex = "";
+        swiperMobileSection.style.display = "block";
+        swiperMobileSection.style.zIndex = "10";
       },
     });
 
     // الفيديوهات تطلع فوق السيكشن المثبت
     gsap.to(videosSection, {
+      y: () => -pinSection.offsetHeight,
+      ease: "none",
+      scrollTrigger: {
+        trigger: pinSection,
+        start: "top top",
+        end: () => "+=" + videosSection.offsetHeight,
+        scrub: true,
+      },
+    });
+
+    // السويبر الموبايل
+    gsap.to(swiperMobileSection, {
       y: () => -pinSection.offsetHeight,
       ease: "none",
       scrollTrigger: {

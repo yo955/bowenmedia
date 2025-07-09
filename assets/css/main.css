@@ -93,6 +93,9 @@ i.fa {
 }
 
 /* global class */
+.over-h{
+    overflow: hidden;
+}
 .title1D {
     font-family: "myfont-kattan";
     --tw-leading: 135%;
@@ -3037,7 +3040,7 @@ display: inline-block;
 }
 
 .progress-bar {
-  height: 1px;
+  height: 1.5px;
   background-color: rgb(204 204 204);
   width: 100%;
   overflow: hidden;
