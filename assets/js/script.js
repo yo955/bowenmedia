@@ -1299,35 +1299,54 @@ document.addEventListener("DOMContentLoaded", function () {
     ScrollTrigger.create({
       trigger: pinSection,
       start: "top top",
-      end: () => "+=" + videosSection.offsetHeight || swiperMobileSection.offsetHeight,
+      end: () => "+=" + videosSection.offsetHeight,
       pin: true,
       pinSpacing: false,
       scrub: true,
       onEnter: () => {
         pinSection.style.background = "#111";
         pinSection.style.zIndex = "10";
-        swiperMobileSection.style.display = "none";
-        swiperMobileSection.style.zIndex = "0";
       },
       onLeave: () => {
         pinSection.style.background = "";
         pinSection.style.zIndex = "";
-        swiperMobileSection.style.display = "block";
-        swiperMobileSection.style.zIndex = "10";
       },
       onEnterBack: () => {
         pinSection.style.background = "#111";
         pinSection.style.zIndex = "10";
-        swiperMobileSection.style.display = "none";
-        swiperMobileSection.style.zIndex = "0";
       },
       onLeaveBack: () => {
         pinSection.style.background = "";
         pinSection.style.zIndex = "";
-        swiperMobileSection.style.display = "block";
-        swiperMobileSection.style.zIndex = "10";
       },
     });
+    // mobile section
+    if (window.innerWidth < 768) {
+      ScrollTrigger.create({
+        trigger: pinSection,
+        start: "top top",
+        end: () => "+=" + swiperMobileSection.offsetHeight,
+        pin: true,
+        pinSpacing: false,
+        scrub: true,
+        onEnter: () => {
+          pinSection.style.background = "#111";
+          pinSection.style.zIndex = "10";
+        },
+        onLeave: () => {
+          pinSection.style.background = "";
+          pinSection.style.zIndex = "";
+        },
+        onEnterBack: () => {
+          pinSection.style.background = "#111";
+          pinSection.style.zIndex = "10";
+        },
+        onLeaveBack: () => {
+          pinSection.style.background = "";
+          pinSection.style.zIndex = "";
+        },
+      });
+    }
 
     // الفيديوهات تطلع فوق السيكشن المثبت
     gsap.to(videosSection, {
@@ -1348,7 +1367,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: pinSection,
         start: "top top",
-        end: () => "+=" + videosSection.offsetHeight,
+        end: () => "+=" + swiperMobileSection.offsetHeight,
         scrub: true,
       },
     });

@@ -287,6 +287,11 @@
   z-index: 20;
   will-change: transform;
 }
+.swiper-mobile-section {
+  position: relative;
+  z-index: 20;
+  will-change: transform;
+}
 .team-video {
   opacity: 0;
   transform: translateY(80px);
